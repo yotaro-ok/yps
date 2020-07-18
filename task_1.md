@@ -6,6 +6,11 @@
 
 ## 2. AWS無料枠アカウントの作成
 
+[AWS 無料利用枠](https://aws.amazon.com/jp/free/?all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc)
+
+[住所を英語に変換できるサイト](https://kimini.jp/)
+<br>
+<br>
 ![スクリーンショット 2020-07-18 20-30-12](https://user-images.githubusercontent.com/63440984/87853259-b5e69200-c943-11ea-996a-4e014ebeced9.png)
 ![スクリーンショット 2020-07-18 20-36-28](https://user-images.githubusercontent.com/63440984/87853263-ba12af80-c943-11ea-8bf4-de4a00f66a94.png)
 ![スクリーンショット 2020-07-18 20-36-46](https://user-images.githubusercontent.com/63440984/87853264-bc750980-c943-11ea-8121-bd4288ce54a9.png)
