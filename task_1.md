@@ -12,4 +12,5 @@
 
 TODO: 資料を纏める
 
+[資料用スクショツイート](https://twitter.com/yotaro__ok/status/1284454044077965313)
 [元ネタツイート](https://twitter.com/yotaro__ok/status/1284115619034484737)
