@@ -11,22 +11,32 @@
 [住所を英語に変換できるサイト](https://kimini.jp/)
 <br>
 <br>
+#### Step.1 メールアドレスとクレジットカードを用意してAWSアカウントを作成してください　AWSアカウント名は適当で構いません
 ![スクリーンショット 2020-07-18 20-30-12](https://user-images.githubusercontent.com/63440984/87853259-b5e69200-c943-11ea-996a-4e014ebeced9.png)
+#### Step.2 ベーシックプランを選択してください
 ![スクリーンショット 2020-07-18 20-36-28](https://user-images.githubusercontent.com/63440984/87853263-ba12af80-c943-11ea-8bf4-de4a00f66a94.png)
-![スクリーンショット 2020-07-18 20-36-46](https://user-images.githubusercontent.com/63440984/87853264-bc750980-c943-11ea-8121-bd4288ce54a9.png)
+
+#### なんやかんや入力したと思いますが完了です
 
 ***
 
 ## 3. EC2上にCentOS7でインスタンス作成
 
+#### Step.1 EC2　を選択してください
 ![スクリーンショット 2020-07-18 20-54-50](https://user-images.githubusercontent.com/63440984/87853267-be3ecd00-c943-11ea-9635-87ec4f1a6a69.png)
+#### Step.2 インスタンス　を選択してください
 ![スクリーンショット 2020-07-18 20-56-02](https://user-images.githubusercontent.com/63440984/87853269-c0a12700-c943-11ea-9c7b-5540f24ff89f.png)
+#### Step.3 インスタンスの作成　を選択してください
 ![スクリーンショット 2020-07-18 20-56-42](https://user-images.githubusercontent.com/63440984/87853271-c39c1780-c943-11ea-97fb-c16ba63dcd10.png)
+#### Step.4 無料利用枠のみ　を選択してください
 ![スクリーンショット 2020-07-18 20-58-08](https://user-images.githubusercontent.com/63440984/87853275-c6970800-c943-11ea-89f1-699a788a4dc8.png)
 ![スクリーンショット 2020-07-18 20-59-03](https://user-images.githubusercontent.com/63440984/87853278-ca2a8f00-c943-11ea-804b-9acd99f06a5b.png)
+#### Step.5 AWS Marketplace を選択して検索欄に　CentOS7　を入力してください
 ![スクリーンショット 2020-07-18 21-00-48](https://user-images.githubusercontent.com/63440984/87853280-cdbe1600-c943-11ea-93b9-20ef24fe857c.png)
+#### Step.6 Continue を選択してください
 ![スクリーンショット 2020-07-18 21-01-58](https://user-images.githubusercontent.com/63440984/87853282-d0207000-c943-11ea-812d-617f83399686.png)
 ![スクリーンショット 2020-07-18 21-02-57](https://user-images.githubusercontent.com/63440984/87853284-d282ca00-c943-11ea-92fc-eb9b3411b956.png)
+#### Step.7 インスタンスのタイプ：t2.micro vCPU：1 メモリ:1 を選択して　次のステップ：インスタンスの詳細の設定　を選択してください
 ![スクリーンショット 2020-07-18 21-03-40](https://user-images.githubusercontent.com/63440984/87853286-d6165100-c943-11ea-9b1c-0100d5ce0b8f.png)
 ![スクリーンショット 2020-07-18 21-04-30](https://user-images.githubusercontent.com/63440984/87853290-e0d0e600-c943-11ea-91a5-075a33578d34.png)
 ![スクリーンショット 2020-07-18 21-06-04](https://user-images.githubusercontent.com/63440984/87853295-e62e3080-c943-11ea-90be-e985f3d61f93.png)
