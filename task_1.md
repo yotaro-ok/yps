@@ -31,20 +31,28 @@
 #### Step.4 無料利用枠のみ　を選択してください
 ![スクリーンショット 2020-07-18 20-58-08](https://user-images.githubusercontent.com/63440984/87853275-c6970800-c943-11ea-89f1-699a788a4dc8.png)
 ![スクリーンショット 2020-07-18 20-59-03](https://user-images.githubusercontent.com/63440984/87853278-ca2a8f00-c943-11ea-804b-9acd99f06a5b.png)
-#### Step.5 AWS Marketplace を選択して検索欄に　CentOS7　を入力してください
+#### Step.5 AWS Marketplace　を選択して検索欄に　CentOS7　を入力してください
 ![スクリーンショット 2020-07-18 21-00-48](https://user-images.githubusercontent.com/63440984/87853280-cdbe1600-c943-11ea-93b9-20ef24fe857c.png)
 #### Step.6 Continue を選択してください
 ![スクリーンショット 2020-07-18 21-01-58](https://user-images.githubusercontent.com/63440984/87853282-d0207000-c943-11ea-812d-617f83399686.png)
 ![スクリーンショット 2020-07-18 21-02-57](https://user-images.githubusercontent.com/63440984/87853284-d282ca00-c943-11ea-92fc-eb9b3411b956.png)
 #### Step.7 インスタンスのタイプ：t2.micro vCPU：1 メモリ:1 を選択して　次のステップ：インスタンスの詳細の設定　を選択してください
 ![スクリーンショット 2020-07-18 21-03-40](https://user-images.githubusercontent.com/63440984/87853286-d6165100-c943-11ea-9b1c-0100d5ce0b8f.png)
+#### Step.8 次のステップ：ストレージの追加　を選択してください
 ![スクリーンショット 2020-07-18 21-04-30](https://user-images.githubusercontent.com/63440984/87853290-e0d0e600-c943-11ea-91a5-075a33578d34.png)
+#### Step.9 サイズ（GiB）に　30　を入力して　次のステップ：タグの追加　を選択してください
 ![スクリーンショット 2020-07-18 21-06-04](https://user-images.githubusercontent.com/63440984/87853295-e62e3080-c943-11ea-90be-e985f3d61f93.png)
+#### Step.10 セキュリティグループの設定　を選択してください
 ![スクリーンショット 2020-07-18 21-07-00](https://user-images.githubusercontent.com/63440984/87853299-e9292100-c943-11ea-8053-8091a2182daf.png)
+#### Step.11 確認と作成　を選択してください
 ![スクリーンショット 2020-07-18 21-09-32](https://user-images.githubusercontent.com/63440984/87853301-ec241180-c943-11ea-8f64-3fb67848f0ea.png)
+#### Step.12 起動　を選択してください
 ![スクリーンショット 2020-07-18 21-10-31](https://user-images.githubusercontent.com/63440984/87853305-efb79880-c943-11ea-933b-c3f6fecc9509.png)
 ![スクリーンショット 2020-07-18 21-11-51](https://user-images.githubusercontent.com/63440984/87853307-f2b28900-c943-11ea-9f80-f5a79206f716.png)
+#### Step.13 新しいキーペアの作成　を選択し、適当なキーペア名を入力後にキーペアのダウンロード　を選択してください
+#### Step.14 インスタンスの作成　を選択してください
 ![スクリーンショット 2020-07-18 21-13-30](https://user-images.githubusercontent.com/63440984/87853309-f8a86a00-c943-11ea-94a8-9d0d6b5587fe.png)
+#### Step.15 少し待ちます
 ![スクリーンショット 2020-07-18 21-14-13](https://user-images.githubusercontent.com/63440984/87853311-fba35a80-c943-11ea-9d82-fe8d6b6898f6.png)
 ![スクリーンショット 2020-07-18 21-16-14](https://user-images.githubusercontent.com/63440984/87853313-fe9e4b00-c943-11ea-89ef-4983c4c8f261.png)
 ![スクリーンショット 2020-07-18 21-16-50](https://user-images.githubusercontent.com/63440984/87853314-01993b80-c944-11ea-9988-5afccef15ec6.png)
