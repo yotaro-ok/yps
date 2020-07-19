@@ -18,6 +18,9 @@
 
 #### なんやかんや入力したと思いますが完了です
 
+<br>
+<br>
+
 ***
 
 ## 3. EC2上にCentOS7でインスタンス作成
@@ -55,9 +58,16 @@
 #### Step.15 少し待ちます
 ![スクリーンショット 2020-07-18 21-14-13](https://user-images.githubusercontent.com/63440984/87853311-fba35a80-c943-11ea-9d82-fe8d6b6898f6.png)
 ![スクリーンショット 2020-07-18 21-16-14](https://user-images.githubusercontent.com/63440984/87853313-fe9e4b00-c943-11ea-89ef-4983c4c8f261.png)
+#### Step.インスタンスの表示　を選択してください
 ![スクリーンショット 2020-07-18 21-16-50](https://user-images.githubusercontent.com/63440984/87853314-01993b80-c944-11ea-9988-5afccef15ec6.png)
+#### Step.16 インスタンスの状態が　running　となっていることを確認してください
 ![スクリーンショット 2020-07-18 21-17-31](https://user-images.githubusercontent.com/63440984/87853316-03fb9580-c944-11ea-9090-7cee8da26a78.png)
 ![スクリーンショット 2020-07-18 21-19-09](https://user-images.githubusercontent.com/63440984/87853318-0827b300-c944-11ea-937c-79f9f9029789.png)
+
+#### インスタンスの作成完了です　おめでとうございます！
+
+<br>
+<br>
 
 ***
 
