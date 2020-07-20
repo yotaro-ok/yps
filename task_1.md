@@ -73,7 +73,42 @@
 
 ## 4. SSH接続、環境設定、アップデート
 
+#### Step.1 IPv4 パブリックIP　をコピーしてください
 ![スクリーンショット 2020-07-18 21-20-00](https://user-images.githubusercontent.com/63440984/87853320-0a8a0d00-c944-11ea-8bbe-dd662fe4827a.png)
+#### Step.2 先でダウンロードしたXXXX.pemファイルをデスクトップにコピーして、ターミナルで以下のコマンドを打ってください（Macユーザーのみ）
+#### Windowsユーザーは、TeraTerm使ってください、Linuxユーザーは適当にどうぞ
+```
+chmod 600 ~/Desktop/XXXX.pem
+mkdir ~/.ssh/
+chmod 700 ~/.ssh/
+cp ~/Desktop/XXXX.pem ~/.ssh/
+```
+
+#### Step.3 AWS EC2 にログインしてください
+```
+ssh centos@xx.xx.xx.xx -i ~/.ssh/XXX.pem
+```
+
+#### Step.4 ログインしているかwhoamiコマンドで確認してください centosと表示されればログインしています
+```
+whoami
+centos
+```
+#### Step.5 SELinuxを無効化してください
+```
+sudo setenforce 0
+sudo vi /etc/selinux/config
+```
+config内の「SELINUX=enforcing」を「SELINUX=disabled」に変更してください
+
+#### Step.6 getenforceコマンドで確認してください　Permissiveと表示されれば無効化されています
+```
+getenforce
+Permissive
+```
+
+#### Step.7
+
 ![スクリーンショット 2020-07-18 21-28-38](https://user-images.githubusercontent.com/63440984/87853321-0d84fd80-c944-11ea-8a1f-2e33b4bc5e72.png)
 ![スクリーンショット 2020-07-18 21-29-19](https://user-images.githubusercontent.com/63440984/87853323-107fee00-c944-11ea-8f94-4a46b8241478.png)
 ![スクリーンショット 2020-07-18 21-32-12](https://user-images.githubusercontent.com/63440984/87853325-12e24800-c944-11ea-8113-b006f0a511ac.png)
