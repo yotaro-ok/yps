@@ -16,4 +16,4 @@ task#1 [の質問はこちらへ](https://github.com/yotaro-ok/yps/issues/1)
 
 Task#2 [MySQL5.7｜Nginx1.6をインストール｜PHP7.3をインストール｜Laravel7をインストール｜Welcome画面表示](https://github.com/yotaro-ok/yps/blob/master/task_2.md)
 
-Task#2 [の質問はこちらへ](https://github.com/yotaro-ok/yps/issues/2)
+Task#2 [の質問はこちらへ](https://github.com/yotaro-ok/yps/issues/)
