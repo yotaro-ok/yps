@@ -150,25 +150,25 @@ sudo systemctl restart sshd
 ```
 何も表示されなければ正常に再起動されています
 
-#### Step.17　以下のコマンドを打ってスワップ領域を作成してください
+#### Step.16　以下のコマンドを打ってスワップ領域を作成してください
 ```
 sudo -s /bin/dd if=/dev/zero of=/var/swap.1 bs=1M count=1024
 sudo -s /sbin/mkswap /var/swap.1
 sudo -s /sbin/swapon /var/swap.1
 ```
 
-#### Step.16 AWSマネジドコンソールに戻り再度　インバウンドルールの編集　を選択してください
+#### Step.17 AWSマネジドコンソールに戻り再度　インバウンドルールの編集　を選択してください
 ![スクリーンショット 2020-07-18 21-39-19](https://user-images.githubusercontent.com/63440984/87853330-1d044680-c944-11ea-95bd-02b6ed8b604f.png)
 ![スクリーンショット 2020-07-18 21-50-05](https://user-images.githubusercontent.com/63440984/87853337-22619100-c944-11ea-8648-bbbbf5f05c4f.png)
-#### Step.17 タイプ：ssh　ポート範囲：22　を削除してください
+#### Step.18 タイプ：ssh　ポート範囲：22　を削除してください
 ![スクリーンショット 2020-07-18 21-52-44](https://user-images.githubusercontent.com/63440984/87853338-255c8180-c944-11ea-9e0b-51a0bbbb29db.png)
-#### Step.18 ルールを保存　を選択してください
+#### Step.19 ルールを保存　を選択してください
 ![スクリーンショット 2020-07-18 21-53-23](https://user-images.githubusercontent.com/63440984/87853341-27bedb80-c944-11ea-9c40-d4f69b37adce.png)
 ![スクリーンショット 2020-07-18 21-54-04](https://user-images.githubusercontent.com/63440984/87853344-2a213580-c944-11ea-9c36-66517a256c38.png)
-#### Step.19 タグに適当な名前を付けてください　※何も付けなくても問題ありません
+#### Step.20 タグに適当な名前を付けてください　※何も付けなくても問題ありません
 ![スクリーンショット 2020-07-18 22-04-10](https://user-images.githubusercontent.com/63440984/87853348-2c838f80-c944-11ea-91f3-7d2c841b96e2.png)
 
-#### Step.20 別のターミナルを開いて変更したPort番号でログインしてください
+#### Step.21 別のターミナルを開いて変更したPort番号でログインしてください
 ```
 ssh centos@xx.xx.xx.xx -p XXXXX -i ~/.ssh/XXX.pem
 ```
@@ -180,6 +180,14 @@ ssh centos@xx.xx.xx.xx -p XXXXX -i ~/.ssh/XXX.pem
 <br>
 
 ***
+
+####　注意事項
+EC2インスタンスは、runningのままで大丈夫ですが、インスタンスを複数作成すると課金されるので必ず
+<br>
+実行中インスタンスは、１つにしてください
+<br>
+インスタンスを削除したい場合は、アクション→インスタンスの状態→終了です
+<br>
 
 #### TODO: 資料を纏める
 [資料用スクショツイート](https://twitter.com/yotaro__ok/status/1284454044077965313)
