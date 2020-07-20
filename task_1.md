@@ -2,8 +2,9 @@
 
 ## 1. GitHubアカウントの作成
 以下を参考に作成してください
+<br>
 [５ステップでGitHubのアカウントを作成【図解多め】 ](https://shimapuku.com/programming/environment/github-account)
-
+<br>
 作成したら[yotaro](https://twitter.com/yotaro__ok)にDMでアカウント名を送りつけてください
 
 ### yotaroからメールが来てコラボレートしたら完了です
