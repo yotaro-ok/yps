@@ -1,6 +1,12 @@
 # yps1 task#1
 
 ## 1. GitHubアカウントの作成
+以下を参考に作成してください
+[５ステップでGitHubのアカウントを作成【図解多め】 ](https://shimapuku.com/programming/environment/github-account)
+
+作成したら[yotaro](https://twitter.com/yotaro__ok)にDMでアカウント名を送りつけてください
+
+### yotaroからメールが来てコラボレートしたら完了です
 
 ***
 
@@ -17,7 +23,7 @@
 #### Step.2 ベーシックプランを選択してください
 ![スクリーンショット 2020-07-18 20-36-28](https://user-images.githubusercontent.com/63440984/87853263-ba12af80-c943-11ea-8bf4-de4a00f66a94.png)
 
-#### なんやかんや入力したと思いますが完了です
+### なんやかんや入力したと思いますが完了です
 
 <br>
 <br>
@@ -65,7 +71,7 @@
 ![スクリーンショット 2020-07-18 21-17-31](https://user-images.githubusercontent.com/63440984/87853316-03fb9580-c944-11ea-9090-7cee8da26a78.png)
 ![スクリーンショット 2020-07-18 21-19-09](https://user-images.githubusercontent.com/63440984/87853318-0827b300-c944-11ea-937c-79f9f9029789.png)
 
-#### インスタンスの作成完了です
+### インスタンスの作成完了です
 
 <br>
 <br>
@@ -161,8 +167,13 @@ sudo -s /sbin/swapon /var/swap.1
 #### Step.19 タグに適当な名前を付けてください　※何も付けなくても問題ありません
 ![スクリーンショット 2020-07-18 22-04-10](https://user-images.githubusercontent.com/63440984/87853348-2c838f80-c944-11ea-91f3-7d2c841b96e2.png)
 
+#### Step.20 別のターミナルを開いて変更したPort番号でログインしてください
+```
+ssh centos@xx.xx.xx.xx -p XXXXX -i ~/.ssh/XXX.pem
+```
+ログインできたら大きな声で　exit　と叫びながらログアウトしてください
 
-#### タスク１が完了しました　おめでとうございます！
+### タスク１が完了しました　おめでとうございます！
 
 <br>
 <br>
