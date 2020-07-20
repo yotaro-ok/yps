@@ -182,19 +182,25 @@ ssh centos@xx.xx.xx.xx -p XXXXX -i ~/.ssh/XXX.pem
 ***
 
 ####　注意事項
+
 EC2インスタンスは、runningのままで大丈夫ですが、インスタンスを複数作成すると課金されるので必ず
 <br>
 実行中インスタンスは、１つにしてください
 <br>
 インスタンスを削除したい場合は、アクション→インスタンスの状態→終了です
 <br>
+<br>
+
+***
 
 #### TODO: 資料を纏める
+
 [資料用スクショツイート](https://twitter.com/yotaro__ok/status/1284454044077965313)
 <br>
 [元ネタツイート](https://twitter.com/yotaro__ok/status/1284115619034484737)
 <br>
 #### 参考
+
 [miyupaca](https://twitter.com/@miyupacaaa)さんのブログ[2020-07-17 yps学習記録その1](https://paca-gatsby.netlify.app/2020-07-17/)
 <br>
 [はなえ](https://twitter.com/kon_hanae)さんの纏め[EC2インスタンス作成～SSH接続](https://github.com/hana329/yps/blob/master/task_1.md)
