@@ -181,7 +181,7 @@ ssh centos@xx.xx.xx.xx -p XXXXX -i ~/.ssh/XXX.pem
 
 ***
 
-####　注意事項
+#### 注意事項
 
 EC2インスタンスは、runningのままで大丈夫ですが、インスタンスを複数作成すると課金されるので必ず
 <br>
