@@ -4,7 +4,7 @@
 
 ***
 
-#### 2020/07/17(fri)
+#### 2020/07/17(Fri)
 
 task#0 [の準備するもの](https://github.com/yotaro-ok/yps/blob/master/task_0.md)
 
@@ -14,8 +14,11 @@ task#1 [の質問はこちらへ](https://github.com/yotaro-ok/yps/issues/1)
 
 ***
 
-#### 2020/07/23()
+#### 2020/07/23(Tue)
 
 Task#2 [MySQL5.7｜Nginx1.6｜PHP7.3｜Laravel7｜Welcome画面表示](https://github.com/yotaro-ok/yps/blob/master/task_2.md)
 
 Task#2 [の質問はこちらへ](https://github.com/yotaro-ok/yps/issues/)
+
+
+#### EOF
