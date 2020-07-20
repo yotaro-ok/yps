@@ -59,13 +59,13 @@
 #### Step.15 少し待ちます
 ![スクリーンショット 2020-07-18 21-14-13](https://user-images.githubusercontent.com/63440984/87853311-fba35a80-c943-11ea-9d82-fe8d6b6898f6.png)
 ![スクリーンショット 2020-07-18 21-16-14](https://user-images.githubusercontent.com/63440984/87853313-fe9e4b00-c943-11ea-89ef-4983c4c8f261.png)
-#### Step.インスタンスの表示　を選択してください
+#### Step.16 インスタンスの表示　を選択してください
 ![スクリーンショット 2020-07-18 21-16-50](https://user-images.githubusercontent.com/63440984/87853314-01993b80-c944-11ea-9988-5afccef15ec6.png)
-#### Step.16 インスタンスの状態が　running　となっていることを確認してください
+#### Step.17 インスタンスの状態が　running　となっていることを確認してください
 ![スクリーンショット 2020-07-18 21-17-31](https://user-images.githubusercontent.com/63440984/87853316-03fb9580-c944-11ea-9090-7cee8da26a78.png)
 ![スクリーンショット 2020-07-18 21-19-09](https://user-images.githubusercontent.com/63440984/87853318-0827b300-c944-11ea-937c-79f9f9029789.png)
 
-#### インスタンスの作成完了です　おめでとうございます！
+#### インスタンスの作成完了です
 
 <br>
 <br>
@@ -143,6 +143,13 @@ sudo systemctl restart sshd
 ```
 何も表示されなければ正常に再起動されています
 
+#### Step.17　以下のコマンドを打ってスワップ領域を作成してください
+```
+sudo -s /bin/dd if=/dev/zero of=/var/swap.1 bs=1M count=1024
+sudo -s /sbin/mkswap /var/swap.1
+sudo -s /sbin/swapon /var/swap.1
+```
+
 #### Step.16 AWSマネジドコンソールに戻り再度　インバウンドルールの編集　を選択してください
 ![スクリーンショット 2020-07-18 21-39-19](https://user-images.githubusercontent.com/63440984/87853330-1d044680-c944-11ea-95bd-02b6ed8b604f.png)
 ![スクリーンショット 2020-07-18 21-50-05](https://user-images.githubusercontent.com/63440984/87853337-22619100-c944-11ea-8648-bbbbf5f05c4f.png)
@@ -153,6 +160,12 @@ sudo systemctl restart sshd
 ![スクリーンショット 2020-07-18 21-54-04](https://user-images.githubusercontent.com/63440984/87853344-2a213580-c944-11ea-9c36-66517a256c38.png)
 #### Step.19 タグに適当な名前を付けてください　※何も付けなくても問題ありません
 ![スクリーンショット 2020-07-18 22-04-10](https://user-images.githubusercontent.com/63440984/87853348-2c838f80-c944-11ea-91f3-7d2c841b96e2.png)
+
+
+#### タスク１が完了しました　おめでとうございます！
+
+<br>
+<br>
 
 ***
 
