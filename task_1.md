@@ -13,6 +13,7 @@
 <br>
 #### Step.1 メールアドレスとクレジットカードを用意してAWSアカウントを作成してください　AWSアカウント名は適当で構いません
 ![スクリーンショット 2020-07-18 20-30-12](https://user-images.githubusercontent.com/63440984/87853259-b5e69200-c943-11ea-996a-4e014ebeced9.png)
+
 #### Step.2 ベーシックプランを選択してください
 ![スクリーンショット 2020-07-18 20-36-28](https://user-images.githubusercontent.com/63440984/87853263-ba12af80-c943-11ea-8bf4-de4a00f66a94.png)
 
@@ -98,13 +99,13 @@ sudo setenforce 0
 sudo vi /etc/selinux/config
 ```
 config内の「SELINUX=enforcing」を「SELINUX=disabled」に変更してください
-
+:wq　でviを終了します
 #### Step.6 getenforceコマンドで確認してください　Permissiveと表示されれば無効化されています
 ```
 getenforce
 Permissive
 ```
-#### Step.7 AWSのマネジドコンソールに戻って　セキュリティグループのCentOS7〜　を選択してください
+#### Step.7 AWSマネジドコンソールに戻って　セキュリティグループのCentOS7〜　を選択してください
 ![スクリーンショット 2020-07-18 21-28-38](https://user-images.githubusercontent.com/63440984/87853321-0d84fd80-c944-11ea-8a1f-2e33b4bc5e72.png)
 #### Step.8 セキュリティグループID　を選択してください
 ![スクリーンショット 2020-07-18 21-29-19](https://user-images.githubusercontent.com/63440984/87853323-107fee00-c944-11ea-8f94-4a46b8241478.png)
@@ -121,6 +122,7 @@ Permissive
 sudo cp /etc/ssh/sshd_config /etc/ssh/sshd_config.org
 sudo vi /etc/ssh/sshd_config
 ```
+
 #### Step.14 以下の２箇所を書き換えてください　※#を削除することを忘れないでください　#はコメント（無効行）扱いされます
 ```
 ＃Port 22
@@ -132,13 +134,24 @@ Port XXXXX
 ↓
 PermitRootLogin no
 ```
+:wq　でviを終了します
+
+#### Step.15　変更が正しいか確認して　sshd を再起動してください
+```
+sudo sshd -t
+sudo systemctl restart sshd
+```
+何も表示されなければ正常に再起動されています
+
+#### Step.16 AWSマネジドコンソールに戻り再度　インバウンドルールの編集　を選択してください
 ![スクリーンショット 2020-07-18 21-39-19](https://user-images.githubusercontent.com/63440984/87853330-1d044680-c944-11ea-95bd-02b6ed8b604f.png)
-#### Step.15
-![スクリーンショット 2020-07-18 21-39-35](https://user-images.githubusercontent.com/63440984/87853334-1f66a080-c944-11ea-8047-4ac43d53afaa.png)
 ![スクリーンショット 2020-07-18 21-50-05](https://user-images.githubusercontent.com/63440984/87853337-22619100-c944-11ea-8648-bbbbf5f05c4f.png)
+#### Step.17 タイプ：ssh　ポート範囲：22　を削除してください
 ![スクリーンショット 2020-07-18 21-52-44](https://user-images.githubusercontent.com/63440984/87853338-255c8180-c944-11ea-9e0b-51a0bbbb29db.png)
+#### Step.18 ルールを保存　を選択してください
 ![スクリーンショット 2020-07-18 21-53-23](https://user-images.githubusercontent.com/63440984/87853341-27bedb80-c944-11ea-9c40-d4f69b37adce.png)
 ![スクリーンショット 2020-07-18 21-54-04](https://user-images.githubusercontent.com/63440984/87853344-2a213580-c944-11ea-9c36-66517a256c38.png)
+#### Step.19 タグに適当な名前を付けてください　※何も付けなくても問題ありません
 ![スクリーンショット 2020-07-18 22-04-10](https://user-images.githubusercontent.com/63440984/87853348-2c838f80-c944-11ea-91f3-7d2c841b96e2.png)
 
 ***
