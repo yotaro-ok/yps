@@ -11,7 +11,7 @@ sudo yum localinstall http://dev.mysql.com/get/mysql57-community-release-el7-7.n
 
 ***
 
-## Nginx1.6のインストール、設定
+## Nginx1.8のインストール、設定
 
 ***
 
