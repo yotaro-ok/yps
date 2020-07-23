@@ -7,8 +7,6 @@
 
 ## MySQL5.7のインストール、設定
 
-sudo yum localinstall http://dev.mysql.com/get/mysql57-community-release-el7-7.noarch.rpm
-
 ***
 
 ## Nginx1.8のインストール、設定
@@ -26,3 +24,9 @@ sudo yum localinstall http://dev.mysql.com/get/mysql57-community-release-el7-7.n
 ## Laravel7のWelcome画面表示
 
 ***
+
+#### TODO: 資料を纏める
+[元ネタツイート](https://twitter.com/yotaro__ok/status/1286271610815516672)　　
+
+#### 参考
+[miyupaca](https://twitter.com/miyupacaaa)さんのブログ[2020-07-23 yps学習記録その2](https://paca-gatsby.netlify.app/2020-07-23/)
