@@ -7,6 +7,8 @@
 
 ## MySQL5.7のインストール、設定
 
+sudo yum localinstall http://dev.mysql.com/get/mysql57-community-release-el7-7.noarch.rpm
+
 ***
 
 ## Nginx1.6のインストール、設定
