@@ -3,6 +3,8 @@
 #### 前回はこちらです
 
 [#yps1 task#0](https://github.com/yotaro-ok/yps/edit/master/task_0.md)
+<br>
+<br>
 
 ## 1. GitHubアカウントの作成
 以下を参考に作成してください
