@@ -1,8 +1,7 @@
-## 暇な人は↓これでもやっといてください
+## 前回の続きです
 
-[シェルスクリプトプログラミング](https://manual.atmark-techno.com/armadillo-guide/armadillo-guide-2_ja-2.2.0/ch05.html)
+[#yps1 #task1](https://github.com/yotaro-ok/yps/blob/master/task_1.md)
 <br>
-[C言語による実践プログラミング](https://manual.atmark-techno.com/armadillo-guide/armadillo-guide-2_ja-2.2.0/ch06.html)
 <br>
 
 ## MySQL5.7のインストール、設定
