@@ -99,11 +99,40 @@ AWS側で　http、https　のポートを開けてください
 sudo systemctl start nginx
 ```
 
-#### ブラウザに　パブリック DNS (IPv4)　を入力してNginxのWelcome画面が表示されれば完了です
+#### ブラウザに　パブリック DNS (IPv4)　を入力してNginxのWelcome画面が表示されればインストール完了です
+
+Nginxのrootディレクトリを/var/www/htmlに変更してください
+```
+sudo mkdir /var/www
+sudo mkdir /var/www/html
+sudo chown -R centos:nginx /var/www
+
+sudo cp /etc/nginx/conf.d/default.conf /etc/nginx/conf.d/default.conf.org
+sudo vi /etc/nginx/conf.d/default.conf
+
+rootのパスを変更してください
+#root   /usr/share/nginx/html;
+root   /var/www/html;
+
+Nginxを再起動してください
+sudo systemctl restart nginx
+```
+
+#### ブラウザでページを更新して 403 エラーになっていればOKです
 
 ***
 
 ## PHP7.3のインストール、設定
+
+インストール
+```
+sudo yum install epel-release -y
+sudo yum install https://rpms.remirepo.net/enterprise/remi-release-7.rpm -y
+sudo yum update -y
+sudo yum -y install --enablerepo=epel,remi,remi-php73 php php-devel php-mbstring php-pdo php-gd php-xml php-mcrypt php-fpm php-mysql php-mysqlnd zip unzip
+php -v
+```
+
 
 ***
 
