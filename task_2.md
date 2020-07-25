@@ -1,6 +1,7 @@
-## 前回の続きです
+## yps2 task#2
 
-[#yps1 #task1](https://github.com/yotaro-ok/yps/blob/master/task_1.md)
+#### 前回の続きです
+[#yps1 task#1](https://github.com/yotaro-ok/yps/blob/master/task_1.md)
 <br>
 <br>
 
