@@ -7,6 +7,27 @@
 
 ## MySQL5.7のインストール、設定
 
+```
+sudo yum localinstall http://dev.mysql.com/get/mysql57-community-release-el7-7.noarch.rpm
+sudo yum install -y mysql-community-server -y
+```
+```
+mysqld --version
+sudo systemctl enable mysqld
+sudo systemctl start mysqld
+sudo systemctl status mysqld
+sudo systemctl stop mysqld
+```
+```
+sudo cat /var/log/mysqld.log | grep -i root
+root@localhost: パスワード
+sudo systemctl start mysqld
+mysql -u root -p
+パスワードを入力
+MySQLのプロンプトが表示されたらOK
+exit　で抜ける
+```
+
 ***
 
 ## Nginx1.8のインストール、設定
