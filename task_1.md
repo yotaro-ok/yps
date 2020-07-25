@@ -6,6 +6,11 @@
 <br>
 <br>
 
+#### 参考
+[ちびはる＠Front-end dev.'s EGG](https://twitter.com/chibiharu02)さんのブログ[Twitterで噂の#ysp1の#task1にチャレンジしてみた。](https://qiita.com/chibiharu02/private/c796f6572f8bc2f31ba2)
+<br>
+<br>
+
 ## 1. GitHubアカウントの作成
 以下を参考に作成してください
 <br>
