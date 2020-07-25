@@ -245,6 +245,8 @@ sudo systemctl restart nginx
 sudo systemctl restart php-fpm
 ```
 
+![スクリーンショット 2020-07-25 10-41-08](https://user-images.githubusercontent.com/63440984/88446279-97acf480-ce63-11ea-8bcb-e3355f9b0a1e.png)
+
 #### ブラウザでページを更新してLaravelのWelcome画面が表示されたら完了です
 
 ***
