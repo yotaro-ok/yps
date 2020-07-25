@@ -257,3 +257,7 @@ sudo systemctl restart php-fpm
 
 #### 参考
 [miyupaca](https://twitter.com/miyupacaaa)さんのブログ[2020-07-23 yps学習記録その2](https://paca-gatsby.netlify.app/2020-07-23/)
+
+***
+
+[SQL学習](https://twitter.com/yotaro__ok/status/1286722000291942400)
