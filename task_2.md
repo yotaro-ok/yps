@@ -32,6 +32,9 @@ mysql -u root -p
 MySQLのプロンプトが表示されたらOK
 
 パスワード変更　※8文字以上で英大文字・小文字・数字・記号を混ぜる
+
+※ # (ハッシュ) はエラーの元になるので使用しない方が吉
+
 SET PASSWORD = PASSWORD('パスワード');
 
 変更できたら
@@ -43,10 +46,8 @@ exit　で抜ける
 sudo vi /etc/my.cnf
 
 最終行に以下を追記
-character-set-server=utf8mb4
 
-[client]
-default-character-set=utf8mb4
+character-set-server=utf8mb4
 ```
 
 ```
@@ -57,11 +58,11 @@ mysql> show variables like "chara%";
 +--------------------------+----------------------------+
 | Variable_name            | Value                      |
 +--------------------------+----------------------------+
-| character_set_client     | utf8mb4                    |
-| character_set_connection | utf8mb4                    |
+| character_set_client     | utf8                       |
+| character_set_connection | utf8                       |
 | character_set_database   | utf8mb4                    |
 | character_set_filesystem | binary                     |
-| character_set_results    | utf8mb4                    |
+| character_set_results    | utf8                       |
 | character_set_server     | utf8mb4                    |
 | character_set_system     | utf8                       |
 | character_sets_dir       | /usr/share/mysql/charsets/ |
@@ -203,7 +204,7 @@ cd /tmp
 php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
 php composer-setup.php
 php -r "unlink('composer-setup.php');"
-sudo mv composer.phar /usr/local/bin/composer  
+sudo mv composer.phar /usr/local/bin/composer
 sudo chmod +x /usr/local/bin/composer
 
 cd /var/www/html
