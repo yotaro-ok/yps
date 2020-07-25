@@ -92,6 +92,15 @@ nginx -v
 sudo systemctl enable nginx
 ```
 
+AWS側で　http、https　のポートを開けてください
+![スクリーンショット 2020-07-25 09-55-19](https://user-images.githubusercontent.com/63440984/88445366-18b4bd80-ce5d-11ea-8c88-e50b86f57c89.png)
+
+```
+sudo systemctl start nginx
+```
+
+#### ブラウザに　パブリック DNS (IPv4)　を入力してNginxのWelcome画面が表示されれば完了です
+
 ***
 
 ## PHP7.3のインストール、設定
