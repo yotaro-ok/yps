@@ -114,6 +114,9 @@ rootのパスを変更してください
 #root   /usr/share/nginx/html;
 root   /var/www/html;
 
+Nginx構文チェック
+nginx -t
+
 Nginxを再起動してください
 sudo systemctl restart nginx
 ```
@@ -133,6 +136,59 @@ sudo yum -y install --enablerepo=epel,remi,remi-php73 php php-devel php-mbstring
 php -v
 ```
 
+php-fpmの設定
+```
+sudo cp /etc/php-fpm.d/www.conf /etc/php-fpm.d/www.conf.org
+sudo vi /etc/php-fpm.d/www.conf
+
+以下に変更
+user = nginx
+group = nginx
+listen = /var/run/php-fpm/php-fpm.sock
+listen.owner = nginx
+http://listen.group = nginx
+listen.mode = 0660
+```
+Nginxの設定
+```
+sudo vi /etc/nginx/conf.d/default.conf
+
+以下を変更してください
+index  index.php index.html index.htm;
+以下を追記してください
+try_files $uri $uri/ /index.php?$query_string;
+
+以下を追記してください
+location ~ \.php$ {
+    fastcgi_pass   unix:/var/run/php-fpm/php-fpm.sock;
+    fastcgi_index  index.php;
+    fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+    include        fastcgi_params;
+}
+```
+
+/var/www 以下のパーミッションを変更して
+php-fpmを自動起動
+Nginx再起動、php-fpm起動
+```
+sudo chown -R centos:nginx /var/www/
+sudo systemctl enable php-fpm
+sudo systemctl restart nginx
+sudo systemctl start php-fpm
+```
+
+php情報を表示
+```
+ファイルを作成してください
+vi /var/www/html/index.php
+
+以下を入力してください
+<?php
+echo phpinfo();
+?>
+```
+
+#### ブラウザのページを更新してPHP情報が表示されれば完了です
 
 ***
 
