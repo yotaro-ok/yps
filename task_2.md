@@ -146,7 +146,7 @@ user = nginx
 group = nginx
 listen = /var/run/php-fpm/php-fpm.sock
 listen.owner = nginx
-http://listen.group = nginx
+listen.group = nginx
 listen.mode = 0660
 ```
 Nginxの設定
