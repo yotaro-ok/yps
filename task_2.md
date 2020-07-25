@@ -75,6 +75,23 @@ mysql> show variables like "chara%";
 
 ## Nginx1.8のインストール、設定
 
+インストール
+```
+sudo vi /etc/yum.repos.d/nginx.repo
+
+以下を入力
+[nginx]
+name=nginx repo
+baseurl=https://nginx.org/packages/centos/$releasever/$basearch/
+gpgcheck=0
+enabled=1
+
+sudo yum install nginx -y
+nginx -v
+
+sudo systemctl enable nginx
+```
+
 ***
 
 ## PHP7.3のインストール、設定
