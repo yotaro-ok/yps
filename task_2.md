@@ -186,6 +186,10 @@ vi /var/www/html/index.php
 <?php
 echo phpinfo();
 ?>
+
+再起動
+sudo systemctl restart nginx
+sudo systemctl restart php-fpm
 ```
 
 #### ブラウザのページを更新してPHP情報が表示されれば完了です
@@ -194,9 +198,55 @@ echo phpinfo();
 
 ## Laravel7のインストール、設定
 
+```
+cd /tmp
+php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+php composer-setup.php
+php -r "unlink('composer-setup.php');"
+sudo mv composer.phar /usr/local/bin/composer  
+sudo chmod +x /usr/local/bin/composer
+
+cd /var/www/html
+composer create-project --prefer-dist laravel/laravel yps
+php artisan key:generate
+
+cd yps
+cp -p .env.example .env
+
+以下を変更してください
+APP_URL=ブラウザのURL
+DB_PASSWORD="パスワード"
+
+
+sudo yum install npm node -y
+
+composer install
+npm install
+
+sudo chown -R centos:nginx /var/www/
+sudo chmod -R 777 storage/ bootstrap/cache/
+```
+
+#### とりあえず完了です
+
 ***
 
 ## Laravel7のWelcome画面表示
+
+```
+vi /etc/nginx/conf.d/default.conf
+
+以下の箇所を
+/var/www/html;
+以下に変更してください
+/var/www/html/yps/public;
+
+再起動してください
+sudo systemctl restart nginx
+sudo systemctl restart php-fpm
+```
+
+#### ブラウザでページを更新してLaravelのWelcome画面が表示されたら完了です
 
 ***
 
