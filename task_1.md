@@ -1,5 +1,9 @@
 # yps1 task#1
 
+#### 前回はこちらです
+
+[#yps1 task#0](https://github.com/yotaro-ok/yps/edit/master/task_0.md)
+
 ## 1. GitHubアカウントの作成
 以下を参考に作成してください
 <br>
