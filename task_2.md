@@ -7,10 +7,13 @@
 
 ## MySQL5.7のインストール、設定
 
+インストール
 ```
 sudo yum localinstall http://dev.mysql.com/get/mysql57-community-release-el7-7.noarch.rpm
 sudo yum install -y mysql-community-server -y
 ```
+
+自動起動、動作確認
 ```
 mysqld --version
 sudo systemctl enable mysqld
@@ -18,6 +21,8 @@ sudo systemctl start mysqld
 sudo systemctl status mysqld
 sudo systemctl stop mysqld
 ```
+
+MySQLログイン
 ```
 sudo cat /var/log/mysqld.log | grep -i root
 root@localhost: パスワード
@@ -25,8 +30,46 @@ sudo systemctl start mysqld
 mysql -u root -p
 パスワードを入力
 MySQLのプロンプトが表示されたらOK
+
+パスワード変更　※8文字以上で英大文字・小文字・数字・記号を混ぜる
+SET PASSWORD = PASSWORD('パスワード');
+
+変更できたら
 exit　で抜ける
 ```
+
+文字コード設定
+```
+sudo vi /etc/my.cnf
+
+最終行に以下を追記
+character-set-server=utf8mb4
+
+[client]
+default-character-set=utf8mb4
+```
+
+```
+sudo systemctl restart mysqld
+mysql -u root -p
+
+mysql> show variables like "chara%";
++--------------------------+----------------------------+
+| Variable_name            | Value                      |
++--------------------------+----------------------------+
+| character_set_client     | utf8mb4                    |
+| character_set_connection | utf8mb4                    |
+| character_set_database   | utf8mb4                    |
+| character_set_filesystem | binary                     |
+| character_set_results    | utf8mb4                    |
+| character_set_server     | utf8mb4                    |
+| character_set_system     | utf8                       |
+| character_sets_dir       | /usr/share/mysql/charsets/ |
++--------------------------+----------------------------+
+8 rows in set (0.00 sec)
+```
+
+##### MySQLのインストール、設定は完了です
 
 ***
 
