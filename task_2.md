@@ -16,6 +16,7 @@ sudo yum install -y mysql-community-server -y
 自動起動、動作確認
 ```
 mysqld --version
+
 sudo systemctl enable mysqld
 sudo systemctl start mysqld
 sudo systemctl status mysqld
@@ -25,27 +26,27 @@ sudo systemctl stop mysqld
 MySQLログイン
 ```
 sudo cat /var/log/mysqld.log | grep -i root
-root@localhost: パスワード
+root@localhost: パスワード // ←初期パスワードが表示されます
+```
+```
 sudo systemctl start mysqld
 mysql -u root -p
-パスワードを入力
-MySQLのプロンプトが表示されたらOK
+// パスワードを入力してMySQLのプロンプトが表示されたらOK
 
-パスワード変更　※8文字以上で英大文字・小文字・数字・記号を混ぜる
-
-※ # (ハッシュ) はエラーの元になるので使用しない方が吉
+// パスワード変更　※8文字以上で英大文字・小文字・数字・記号を混ぜる
+// # (ハッシュ) はエラーの元になるので使用しない方が吉
 
 SET PASSWORD = PASSWORD('パスワード');
 
-変更できたら
-exit　で抜ける
+// 変更できたら
+exit　// で抜ける
 ```
 
 文字コード設定
 ```
 sudo vi /etc/my.cnf
 
-最終行に以下を追記
+// 最終行に以下を追記
 
 character-set-server=utf8mb4
 ```
@@ -80,13 +81,14 @@ mysql> show variables like "chara%";
 ```
 sudo vi /etc/yum.repos.d/nginx.repo
 
-以下を入力
+// 以下を入力
 [nginx]
 name=nginx repo
 baseurl=https://nginx.org/packages/centos/$releasever/$basearch/
 gpgcheck=0
 enabled=1
-
+```
+```
 sudo yum install nginx -y
 nginx -v
 
@@ -107,18 +109,19 @@ Nginxのrootディレクトリを/var/www/htmlに変更してください
 sudo mkdir /var/www
 sudo mkdir /var/www/html
 sudo chown -R centos:nginx /var/www
-
+```
+```
 sudo cp /etc/nginx/conf.d/default.conf /etc/nginx/conf.d/default.conf.org
 sudo vi /etc/nginx/conf.d/default.conf
 
-rootのパスを変更してください
+// rootのパスを変更してください
 #root   /usr/share/nginx/html;
 root   /var/www/html;
 
-Nginx構文チェック
-nginx -t
+// Nginx構文チェック
+sudo nginx -t
 
-Nginxを再起動してください
+// Nginxを再起動してください
 sudo systemctl restart nginx
 ```
 
@@ -142,7 +145,7 @@ php-fpmの設定
 sudo cp /etc/php-fpm.d/www.conf /etc/php-fpm.d/www.conf.org
 sudo vi /etc/php-fpm.d/www.conf
 
-以下に変更
+// 以下に変更
 user = nginx
 group = nginx
 listen = /var/run/php-fpm/php-fpm.sock
@@ -154,12 +157,12 @@ Nginxの設定
 ```
 sudo vi /etc/nginx/conf.d/default.conf
 
-以下を変更してください
+// 以下を変更してください
 index  index.php index.html index.htm;
-以下を追記してください
+// 以下を追記してください
 try_files $uri $uri/ /index.php?$query_string;
 
-以下を追記してください
+// 以下を追記してください
 location ~ \.php$ {
     fastcgi_pass   unix:/var/run/php-fpm/php-fpm.sock;
     fastcgi_index  index.php;
@@ -173,6 +176,7 @@ php-fpmを自動起動
 Nginx再起動、php-fpm起動
 ```
 sudo chown -R centos:nginx /var/www/
+
 sudo systemctl enable php-fpm
 sudo systemctl restart nginx
 sudo systemctl start php-fpm
@@ -180,15 +184,15 @@ sudo systemctl start php-fpm
 
 php情報を表示
 ```
-ファイルを作成してください
+// ファイルを作成してください
 vi /var/www/html/index.php
 
-以下を入力してください
+// 以下を入力してください
 <?php
 echo phpinfo();
 ?>
 
-再起動
+// 再起動
 sudo systemctl restart nginx
 sudo systemctl restart php-fpm
 ```
@@ -206,24 +210,27 @@ php composer-setup.php
 php -r "unlink('composer-setup.php');"
 sudo mv composer.phar /usr/local/bin/composer
 sudo chmod +x /usr/local/bin/composer
-
+```
+```
 cd /var/www/html
 composer create-project --prefer-dist laravel/laravel yps
-php artisan key:generate
-
+```
+```
 cd yps
+php artisan key:generate
 cp -p .env.example .env
 
-以下を変更してください
+// 以下を変更してください
 APP_URL=ブラウザのURL
 DB_PASSWORD="パスワード"
-
-
+```
+```
 sudo yum install npm node -y
 
 composer install
 npm install
-
+```
+```
 sudo chown -R centos:nginx /var/www/
 sudo chmod -R 777 storage/ bootstrap/cache/
 ```
@@ -237,12 +244,14 @@ sudo chmod -R 777 storage/ bootstrap/cache/
 ```
 vi /etc/nginx/conf.d/default.conf
 
-以下の箇所を
+// 以下の箇所を
 /var/www/html;
-以下に変更してください
-/var/www/html/yps/public;
 
-再起動してください
+// 以下に変更してください
+/var/www/html/yps/public;
+```
+```
+// 再起動してください
 sudo systemctl restart nginx
 sudo systemctl restart php-fpm
 ```
