@@ -7,13 +7,13 @@
 
 ## MySQL5.7のインストール、設定
 
-インストール
+#### インストール
 ```
 sudo yum localinstall http://dev.mysql.com/get/mysql57-community-release-el7-7.noarch.rpm
 sudo yum install -y mysql-community-server -y
 ```
 
-自動起動、動作確認
+#### 自動起動、動作確認
 ```
 mysqld --version
 
@@ -23,7 +23,7 @@ sudo systemctl status mysqld
 sudo systemctl stop mysqld
 ```
 
-MySQLログイン
+##### MySQLログイン
 ```
 sudo cat /var/log/mysqld.log | grep -i root
 root@localhost: パスワード // ←初期パスワードが表示されます
@@ -42,7 +42,7 @@ SET PASSWORD = PASSWORD('パスワード');
 exit　// で抜ける
 ```
 
-文字コード設定
+#### 文字コード設定
 ```
 sudo vi /etc/my.cnf
 
@@ -77,7 +77,7 @@ mysql> show variables like "chara%";
 
 ## Nginx1.8のインストール、設定
 
-インストール
+#### インストール
 ```
 sudo vi /etc/yum.repos.d/nginx.repo
 
@@ -104,7 +104,7 @@ sudo systemctl start nginx
 
 #### ブラウザに　パブリック DNS (IPv4)　を入力してNginxのWelcome画面が表示されればインストール完了です
 
-Nginxのrootディレクトリを/var/www/htmlに変更してください
+#### Nginxのrootディレクトリを変更してください
 ```
 sudo mkdir /var/www
 sudo mkdir /var/www/html
@@ -131,7 +131,7 @@ sudo systemctl restart nginx
 
 ## PHP7.3のインストール、設定
 
-インストール
+#### インストール
 ```
 sudo yum install epel-release -y
 sudo yum install https://rpms.remirepo.net/enterprise/remi-release-7.rpm -y
@@ -140,7 +140,7 @@ sudo yum -y install --enablerepo=epel,remi,remi-php73 php php-devel php-mbstring
 php -v
 ```
 
-php-fpmの設定
+#### php-fpmの設定
 ```
 sudo cp /etc/php-fpm.d/www.conf /etc/php-fpm.d/www.conf.org
 sudo vi /etc/php-fpm.d/www.conf
@@ -153,7 +153,8 @@ listen.owner = nginx
 listen.group = nginx
 listen.mode = 0660
 ```
-Nginxの設定
+
+#### Nginxの設定
 ```
 sudo vi /etc/nginx/conf.d/default.conf
 
@@ -171,18 +172,19 @@ location ~ \.php$ {
 }
 ```
 
-/var/www 以下のパーミッションを変更して
-php-fpmを自動起動
-Nginx再起動、php-fpm起動
 ```
+// /var/www 以下のパーミッションを変更して
 sudo chown -R centos:nginx /var/www/
 
+// php-fpmの自動起動設定
 sudo systemctl enable php-fpm
+
+Nginx再起動、php-fpm起動
 sudo systemctl restart nginx
 sudo systemctl start php-fpm
 ```
 
-php情報を表示
+#### php情報を表示
 ```
 // ファイルを作成してください
 vi /var/www/html/index.php
