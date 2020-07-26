@@ -24,7 +24,7 @@ task#2 [の質問はこちらへ](https://github.com/yotaro-ok/yps/issues/3)
 
 #### 2020/07/31(Fri)
 
-task#3 [SQL：テーブル作成｜バッチ作成｜php.ini設定｜npm、nodejsバージョンアップ｜簡単なテストWEBアプリケーション作成｜Bootstrapの利用](https://github.com/yotaro-ok/yps/blob/master/task_3.md) *予定
+task#3 [SQL：テーブル作成｜バッチ作成｜php.ini設定｜npm、nodejsバージョンアップ｜GitHubにファイルをアップロード｜簡単なテストWEBアプリケーション作成｜Bootstrapの利用](https://github.com/yotaro-ok/yps/blob/master/task_3.md) *予定
 
 task#3 [の質問はこちらへ](https://github.com/yotaro-ok/yps/issues/4)
 <br>
