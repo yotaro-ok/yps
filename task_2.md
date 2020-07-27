@@ -223,6 +223,7 @@ php artisan key:generate
 cp -p .env.example .env
 
 // 以下を変更してください
+vi .env
 APP_URL=ブラウザのURL
 DB_PASSWORD="パスワード"
 ```
