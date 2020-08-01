@@ -235,7 +235,7 @@ sudo chmod -R 777 storage/ bootstrap/cache/
 ## Laravel7のWelcome画面表示
 
 ```
-vi /etc/nginx/conf.d/default.conf
+sudo vi /etc/nginx/conf.d/default.conf
 
 以下の箇所を
 /var/www/html;
