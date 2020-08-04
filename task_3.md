@@ -34,7 +34,7 @@ sudo systemctl restart mysql
 cd /var/tmp
 vi get_players.sql
 
-// 以下を追記
+// 以下を記入
 use worldcup2014db;
 select * from players where name = '酒井';
 ```
@@ -140,9 +140,8 @@ git init
 ```
 cd /var/www/html/yps/
 vi .git/config
-```
 
-```
+// 以下を記入
 [user]
     name = 名前
     email = メールアドレス
