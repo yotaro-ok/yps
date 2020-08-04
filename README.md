@@ -28,9 +28,12 @@ task#3 [SQL：テーブル作成（復習）｜バッチ作成（復習）｜php
 
 task#3 [の質問はこちらへ](https://github.com/yotaro-ok/yps/issues/5)
 
+***
+
 #### 2020/08/0?(???)
 
 task#4 [WordPress5.4.2セットアップ（仮）](https://qiita.com/noraworld/items/69e5032d161b1e05978d)
+<br>
 [WordPressでSFTP接続できるようにする](https://sachips.byeto.jp/wordpress/ssh_sftp_updater_support.html)
 
 ***
