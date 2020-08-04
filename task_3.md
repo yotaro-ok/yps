@@ -47,6 +47,7 @@ MySQL CLIで日本語が入力できない件については、ライブラリ�
 #### 参考
 
 [よーすけ](https://twitter.com/yosuke_89)さんのブログ→[yps1 task3まとめ](https://yousuke.hatenadiary.com/entry/2020/08/01/000820)
+<br>
 [miyupaca](https://twitter.com/miyupacaaa)さんのブログ→[2020-07-30 yps学習記録その3](https://paca-gatsby.netlify.app/2020-07-30/)
 
 [Githubの公開鍵を登録する手順](https://qiita.com/tnatsume00/items/e147662368d02e6416d2)
