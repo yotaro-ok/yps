@@ -16,9 +16,10 @@
 <br>
 [MySQLクライアントに日本語が入力できない理由](https://developer.suzna.com/entry/2018/04/23/103928)
 <br>
-MySQL CLIで日本語が入力できない件については、ライブラリ変更による影響なのでどうするか考えます。
+MySQL CLIで日本語が入力できない件については、ライブラリ変更による影響なのでどうするか考えました👇
 
 ```
+// utf8mb4に戻す
 sudo vi /etc/mysql.cnf
 
 // 最終行に以下を追記
@@ -29,11 +30,25 @@ default-character-set=utf8mb4
 sudo systemctl restart mysql
 ```
 
+```
+cd /var/tmp
+vi get_players.sql
+```
+```
+use worldcup2014db;
+select * from players where name = '酒井';
+```
+
+```
+mysql -u root -p  < ./get_players.sql // SQLファイルを実行
+```
+```
+mysql -u root -p  < ./get_players.sql > ./out.txt // SQLファイルを実行して出力をファイルに書き込む
+```
+
 ***
 
 ## SQLテーブル作成（復習）
-
-***
 
 ```
 cd /tmp
@@ -56,9 +71,9 @@ show tables; // テーブル名が表示されればOKです
 exit
 ```
 
-## Laravelでバッチ作成（復習）
-
 ***
+
+## Laravelでバッチ作成（復習）
 
 ```
 cd /var/www/html/yps
@@ -83,9 +98,9 @@ php artisan config:clear
 php artisan test_command // 選手の名前が表示されればOKです
 ```
 
-## php.ini設定
-
 ***
+
+## php.ini設定
 
 ```
 sudo cp /etc/php.ini /etc/php.ini.org
@@ -106,9 +121,9 @@ sudo systemctl restart php-fpm
 sudo systemctl restart nginx
 ```
 
-## Git/GitHub設定
-
 ***
+
+## Git/GitHub設定
 
 ```
 sudo yum install git -y
@@ -116,7 +131,7 @@ cd /var/www/html/yps
 git init
 ```
 
-// GitHubでリポジトリ作成
+[GitHubにリポジトリを作成する](https://docs.github.com/ja/github/getting-started-with-github/create-a-repo)
 
 ```
 cd /var/www/html/yps/
@@ -171,6 +186,9 @@ git branch // 開発用developブランチになっているか確認
 [Gitを最大限に活用できる「Git flow」で、効率よく開発を進めよう！](https://liginc.co.jp/248864)
 
 ***
+
+<br>
+<br>
 
 #### TODO: 資料を纏める
 
