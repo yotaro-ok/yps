@@ -33,8 +33,8 @@ sudo systemctl restart mysql
 ```
 cd /var/tmp
 vi get_players.sql
-```
-```
+
+// 以下を追記
 use worldcup2014db;
 select * from players where name = '酒井';
 ```
