@@ -165,6 +165,8 @@ ssh-keygen -t rsa -b 4096 -C "メールアドレス"
 ~/.ssh/id_rsa.pub // 表示された文字列をGitHubに登録
 ```
 
+[Githubの公開鍵を登録する手順](https://qiita.com/tnatsume00/items/e147662368d02e6416d2)
+
 ***
 
 ## GitHubにLaravelソースファイルをアップロード
@@ -199,5 +201,3 @@ git branch // 開発用developブランチになっているか確認
 [よーすけ](https://twitter.com/yosuke_89)さんのブログ→[yps1 task3まとめ](https://yousuke.hatenadiary.com/entry/2020/08/01/000820)
 <br>
 [miyupaca](https://twitter.com/miyupacaaa)さんのブログ→[2020-07-30 yps学習記録その3](https://paca-gatsby.netlify.app/2020-07-30/)
-
-[Githubの公開鍵を登録する手順](https://qiita.com/tnatsume00/items/e147662368d02e6416d2)
