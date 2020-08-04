@@ -92,6 +92,10 @@ app/Console/Commands/TestCommand.php
 
 [１回全部消して全コピペ](https://github.com/yotaro-ok/yps/issues/3#issuecomment-663672640)
 
+```
+vi .env
+DB_DATABASE=worldcup2014db // データベース名を変更
+```
 
 ```
 php artisan config:clear
