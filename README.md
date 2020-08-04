@@ -32,9 +32,33 @@ task#3 [の質問はこちらへ](https://github.com/yotaro-ok/yps/issues/5)
 
 #### 2020/08/0?(???)
 
-task#4 [WordPress5.4.2セットアップ（仮）](https://qiita.com/noraworld/items/69e5032d161b1e05978d)
+task#4 [WordPress5.4.2セットアップ（仮）](https://qiita.com/noraworld/items/69e5032d161b1e05978d)←とりあえず
 <br>
 [WordPressでSFTP接続できるようにする](https://sachips.byeto.jp/wordpress/ssh_sftp_updater_support.html)
+
+***
+
+#### 2020/08/??(???)
+
+task#5 [簡単なテストWEBアプリケーション作成｜Bootstrapの利用」()
+
+***
+
+#### 2020/08/??(???)
+
+task#6 [MVCでWEBアプリケーション作成」()
+
+***
+
+#### 2020/08/??(???)
+
+task#7 [MVCでWEBアプリケーション作成2」()
+
+***
+
+#### 2020/08/??(???)
+
+task#8 [MVCでWEBアプリケーション作成3｜その他」()
 
 ***
 
