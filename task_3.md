@@ -90,7 +90,7 @@ ls -la app/Console/Commands/TestCommand.php // ファイルが存在すること
 app/Console/Commands/TestCommand.php
 ```
 
-[１回全部消して全コピペ](https://github.com/yotaro-ok/yps/issues/3#issuecomment-663672640)
+[全部消して全コピペ](https://github.com/yotaro-ok/yps/issues/3#issuecomment-663672640)
 
 ```
 vi .env
@@ -111,9 +111,9 @@ sudo cp /etc/php.ini /etc/php.ini.org
 sudo vi /etc/php.ini
 ```
 
-以下を読んで修正→[CentOSにPHP7をインストールしたらやっておくべき初期設定](https://affiwork.net/php-settings/)
+これを読んで修正→[CentOSにPHP7をインストールしたらやっておくべき初期設定](https://affiwork.net/php-settings/)
 <br>
-修正箇所→[colordiff -u /etc/php.ini.org /etc/php.ini](https://github.com/yotaro-ok/yps/issues/5#issuecomment-667203978)
+修正箇所の差分→[colordiff -u /etc/php.ini.org /etc/php.ini](https://github.com/yotaro-ok/yps/issues/5#issuecomment-667203978)
 ※エラーファイル出力あり
 
 ```
