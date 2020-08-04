@@ -40,31 +40,31 @@ task#4 [WordPress5.4.2セットアップ（仮）](https://qiita.com/noraworld/i
 
 #### 2020/08/??(???)
 
-task#5 [簡単なテストWEBアプリケーション作成｜Bootstrapの利用」(https://twitter.com/yotaro__ok)
+task#5 [簡単なテストWEBアプリケーション作成｜Bootstrapの利用](https://twitter.com/yotaro__ok)
 
 ***
 
 #### 2020/08/??(???)
 
-task#6 [MVCでWEBアプリケーション作成」(https://twitter.com/yotaro__ok)
+task#6 [MVCでWEBアプリケーション作成](https://twitter.com/yotaro__ok)
 
 ***
 
 #### 2020/08/??(???)
 
-task#7 [MVCでWEBアプリケーション作成2」(https://twitter.com/yotaro__ok)
+task#7 [MVCでWEBアプリケーション作成2](https://twitter.com/yotaro__ok)
 
 ***
 
 #### 2020/08/??(???)
 
-task#8 [MVCでWEBアプリケーション作成3」(https://twitter.com/yotaro__ok)
+task#8 [MVCでWEBアプリケーション作成3](https://twitter.com/yotaro__ok)
 
 ***
 
 #### 2020/09/??(???)
 
-task#9 [その他」(https://twitter.com/yotaro__ok)
+task#9 [その他](https://twitter.com/yotaro__ok)
 
 ***
 
