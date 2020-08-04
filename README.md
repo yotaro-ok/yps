@@ -24,7 +24,7 @@ task#2 [の質問はこちらへ](https://github.com/yotaro-ok/yps/issues/3)
 
 #### 2020/07/31(Fri)
 
-task#3 [SQL：テーブル作成（復習）｜バッチ作成（復習）｜php.ini設定｜GitHubにファイルをアップロード(https://github.com/yotaro-ok/yps/blob/master/task_3.md)
+task#3 [SQL：テーブル作成（復習）｜バッチ作成（復習）｜php.ini設定｜GitHubにファイルをアップロード](https://github.com/yotaro-ok/yps/blob/master/task_3.md)
 
 task#3 [の質問はこちらへ](https://github.com/yotaro-ok/yps/issues/5)
 
