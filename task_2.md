@@ -161,6 +161,7 @@ try_files $uri $uri/ /index.php?$query_string;
 
 以下を追記してください
 location ~ \.php$ {
+    root   /var/www/html;
     fastcgi_pass   unix:/var/run/php-fpm/php-fpm.sock;
     fastcgi_index  index.php;
     fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
