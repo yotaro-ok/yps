@@ -20,7 +20,7 @@ MySQL CLIで日本語が入力できない件については、ライブラリ�
 
 ```
 // utf8mb4に戻す
-sudo vi /etc/mysql.cnf
+sudo vi /etc/my.cnf
 
 // 最終行に以下を追記
 [client]
