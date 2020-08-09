@@ -34,7 +34,7 @@ task#3 [の質問はこちらへ](https://github.com/yotaro-ok/yps/issues/5)
 
 task#4 [WordPress5.4.2セットアップ](https://github.com/yotaro-ok/yps/blob/master/task_4.md)
 
-task#4 [の質問はこちらへ](https://github.com/yotaro-ok/yps/issues/7)
+task#4 [の質問はこちらへ](https://github.com/yotaro-ok/yps/issues/12)
 
 ***
 
