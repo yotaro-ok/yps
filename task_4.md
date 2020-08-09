@@ -7,7 +7,7 @@
 
 ***
 
-## WordPress
+## WordPress5.4.2セットアップ
 <br>
 <br>
 <br>
