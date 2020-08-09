@@ -30,11 +30,11 @@ task#3 [の質問はこちらへ](https://github.com/yotaro-ok/yps/issues/5)
 
 ***
 
-#### 2020/08/0?(???)
+#### 2020/08/09(sun)
 
-task#4 [WordPress5.4.2セットアップ（仮）](https://qiita.com/noraworld/items/69e5032d161b1e05978d)←とりあえず
-<br>
-[WordPressでSFTP接続できるようにする](https://sachips.byeto.jp/wordpress/ssh_sftp_updater_support.html)
+task#4 [WordPress5.4.2セットアップ](https://github.com/yotaro-ok/yps/blob/master/task_4.md)
+
+task#4 [の質問はこちらへ](https://github.com/yotaro-ok/yps/issues/7)
 
 ***
 
