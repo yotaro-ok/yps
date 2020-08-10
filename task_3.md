@@ -118,7 +118,7 @@ sudo vi /etc/php.ini
 
 ```
 sudo touch /var/log/php_errors.log
-sudo chown nginx:nginx /var/log/php_errors.log
+sudo chown centos:nginx /var/log/php_errors.log
 
 // サービス再起動
 sudo systemctl restart php-fpm
