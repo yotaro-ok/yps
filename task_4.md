@@ -15,6 +15,8 @@
 
 [元ネタツイート](https://twitter.com/yotaro__ok/status/1292432592973647872)
 <br>
+[訂正箇所](https://twitter.com/yotaro__ok/status/1292581686006300674)
+<br>
 [追加課題](https://twitter.com/yotaro__ok/status/1292586026733428736)
 <br>
 #### 参考
