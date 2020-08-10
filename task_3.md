@@ -113,7 +113,7 @@ sudo vi /etc/php.ini
 
 これを読んで修正→[CentOSにPHP7をインストールしたらやっておくべき初期設定](https://affiwork.net/php-settings/)
 <br>
-修正箇所の差分→[colordiff -u /etc/php.ini.org /etc/php.ini](https://github.com/yotaro-ok/yps/issues/5#issuecomment-667203978)
+修正箇所の差分→[colordiff /etc/php.ini.org /etc/php.ini](https://github.com/yotaro-ok/yps/issues/5#issuecomment-671418284)
 ※エラーファイル出力あり
 
 ```
