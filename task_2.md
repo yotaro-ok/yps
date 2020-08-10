@@ -219,8 +219,8 @@ composer create-project --prefer-dist laravel/laravel yps
 ```
 ```
 cd yps
-php artisan key:generate
 cp -p .env.example .env
+php artisan key:generate
 
 // 以下を変更してください
 vi .env
