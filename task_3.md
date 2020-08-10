@@ -54,7 +54,7 @@ mysql -u root -p  < ./get_players.sql > ./out.txt // SQLファイルを実行し
 cd /tmp
 sudo yum install wget -y
 wget http://tech.pjin.jp/wp-content/uploads/2016/04/worldcup2014.zip
-unzip http://worldcup2014.zip
+unzip worldcup2014.zip
 ls -la worldcup2014.sql
 ```
 
