@@ -16,7 +16,7 @@ task#1 [の質問はこちらへ](https://github.com/yotaro-ok/yps/issues/1)
 
 #### 2020/07/23(Thu)
 
-task#2 [MySQL5.7｜Nginx1.6｜PHP7.3｜Laravel7｜Welcome画面表示](https://github.com/yotaro-ok/yps/blob/master/task_2.md)
+task#2 [MySQL5.7｜Nginx1.8｜PHP7.3｜Laravel7｜Welcome画面表示](https://github.com/yotaro-ok/yps/blob/master/task_2.md)
 
 task#2 [の質問はこちらへ](https://github.com/yotaro-ok/yps/issues/3)
 
