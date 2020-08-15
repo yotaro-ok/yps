@@ -50,6 +50,58 @@ sudo systemctl restart php-fpm
 sudo systemctl restart ngin
 ```
 
+#### ブラウザからアクセスしてください
+
+![Ee-t22hU4AE1myl](https://user-images.githubusercontent.com/63440984/90323187-b6049c80-df98-11ea-8cce-9329315aef02.png)
+<br>
+![Ee-uZibU8AUd1iG](https://user-images.githubusercontent.com/63440984/90323207-f82dde00-df98-11ea-997a-87a02143dde7.png)
+
+#### 全項目入力したら WordPressをインスール　ボタンを選択してください
+↓これが出てばOKです
+![Ee-t22hU4AE1myl](https://user-images.githubusercontent.com/63440984/90323224-417e2d80-df99-11ea-869e-3def17a5f279.png)
+
+#### ログインしてダッシュボード画面が表示されていることを確認してください
+
+sshポートから出来るようにするプラグインを入れます
+![Ee-vlN7U0AAWcKN](https://user-images.githubusercontent.com/63440984/90323231-683c6400-df99-11ea-8ee7-7b4c98a1e307.png)
+<br>
+
+```
+cd wp-content/plugins/
+wget https://downloads.wordpress.org/plugin/ssh-sftp-updater-support.0.8.2.zip
+unzip ./ssh-sftp-updater-support.0.8.2.zip 
+rm http://ssh-sftp-updater-support.0.8.2.zip 
+sudo chown -R centos:nginx ./ssh-sftp-updater-support/
+```
+![Ee-xFKYU8AMoWJY](https://user-images.githubusercontent.com/63440984/90323261-ee58aa80-df99-11ea-8b88-4854c516d9b5.jpeg)
+<br>
+XXX.pemファイル選択してください
+![Ee-xFKYU8AMoWJY](https://user-images.githubusercontent.com/63440984/90323266-0b8d7900-df9a-11ea-95f3-f06a00ab9375.jpeg)
+
+```
+cd /var/www/html/wwpp/
+sudo chmod 644 ./wp-config.php
+```
+
+好きなテーマを選択してインストール、有効化してください
+![Ee-09kJU4AEnSQJ](https://user-images.githubusercontent.com/63440984/90323292-61622100-df9a-11ea-843b-6ec54b97f375.png)
+
+適当にレイアウトやコンテンツ作成して晒してみましょう
+![Ee_CotOUYAE1AMs](https://user-images.githubusercontent.com/63440984/90323306-8bb3de80-df9a-11ea-90f8-823680a4f80a.jpeg)
+<br>
+<br>
+```
+Laravelへの戻しです
+
+sudo vi /etc/nginx/conf.d/default.conf
+
+root   /var/www/html/wwpp;
+// ↓変更
+root    /var/www/html/yps/public;
+
+sudo systemctl restart php-fpm
+sudo systemctl restart ngin
+```
 
 <br>
 <br>
