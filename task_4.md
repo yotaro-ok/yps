@@ -58,11 +58,13 @@ sudo systemctl restart ngin
 
 #### 全項目入力したら WordPressをインスール　ボタンを選択してください
 ↓これが出てばOKです
+<br>
 ![Ee-t22hU4AE1myl](https://user-images.githubusercontent.com/63440984/90323224-417e2d80-df99-11ea-869e-3def17a5f279.png)
 
 #### ログインしてダッシュボード画面が表示されていることを確認してください
 
 sshポートから出来るようにするプラグインを入れます
+<br>
 ![Ee-vlN7U0AAWcKN](https://user-images.githubusercontent.com/63440984/90323231-683c6400-df99-11ea-8ee7-7b4c98a1e307.png)
 <br>
 
@@ -76,6 +78,7 @@ sudo chown -R centos:nginx ./ssh-sftp-updater-support/
 ![Ee-xFKYU8AMoWJY](https://user-images.githubusercontent.com/63440984/90323261-ee58aa80-df99-11ea-8b88-4854c516d9b5.jpeg)
 <br>
 XXX.pemファイル選択してください
+<br>
 ![Ee-xFKYU8AMoWJY](https://user-images.githubusercontent.com/63440984/90323266-0b8d7900-df9a-11ea-95f3-f06a00ab9375.jpeg)
 
 ```
@@ -84,9 +87,11 @@ sudo chmod 644 ./wp-config.php
 ```
 
 好きなテーマを選択してインストール、有効化してください
+<br>
 ![Ee-09kJU4AEnSQJ](https://user-images.githubusercontent.com/63440984/90323292-61622100-df9a-11ea-843b-6ec54b97f375.png)
 
 適当にレイアウトやコンテンツ作成して晒してみましょう
+<br>
 ![Ee_CotOUYAE1AMs](https://user-images.githubusercontent.com/63440984/90323306-8bb3de80-df9a-11ea-90f8-823680a4f80a.jpeg)
 <br>
 <br>
