@@ -8,6 +8,49 @@
 ***
 
 ## WordPress5.4.2セットアップ
+
+```
+cd /tmp
+wget https://ja.wordpress.org/latest-ja.zip
+unzip ./latest-ja.zip
+```
+```
+mv wordpress wwpp
+mv wwpp /var/www/html/
+```
+```
+mysql -u root -p
+
+// ログインします
+
+create database wwppdb;
+grant all on wwppdb.* to wwppuser@localhost identified by '任意のパスワード';
+exit;
+```
+```
+cd /var/www/html/wwpp/
+cp -p wp-config-sample.php wp-config.php
+vi wp-config.php
+```
+[wp-config.php編集差分](https://github.com/yotaro-ok/yps/issues/12#issuecomment-671045833)
+```
+cd /var/www/html
+sudo chown -R centos:nginx /var/www/html/wwpp/
+sudo find /var/www/html/wwpp/ -type f -exec chmod 664 {} \;
+sudo find /var/www/html/wwpp/ -type d -exec chmod 775 {} \;
+```
+```
+sudo vi /etc/nginx/conf.d/default.conf
+
+root /var/www/html/yps/public;
+// ↓に変更
+root   /var/www/html/wwpp;
+
+sudo systemctl restart php-fpm
+sudo systemctl restart ngin
+```
+
+
 <br>
 <br>
 
