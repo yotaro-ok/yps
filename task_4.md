@@ -46,6 +46,12 @@ root /var/www/html/yps/public;
 // ↓に変更
 root   /var/www/html/wwpp;
 
+// 追記
+location /wp-config.php {
+  deny all;
+}
+
+// 再起動
 sudo systemctl restart php-fpm
 sudo systemctl restart ngin
 ```
@@ -81,6 +87,8 @@ XXX.pemファイル選択してください
 <br>
 ![Ee-xFKYU8AMoWJY](https://user-images.githubusercontent.com/63440984/90323266-0b8d7900-df9a-11ea-95f3-f06a00ab9375.jpeg)
 
+
+#### wp-config.phpの権限を変更してください
 ```
 cd /var/www/html/wwpp/
 sudo chmod 644 ./wp-config.php
@@ -107,7 +115,7 @@ root    /var/www/html/yps/public;
 sudo systemctl restart php-fpm
 sudo systemctl restart ngin
 ```
-
+[簡単にできるWordPressのセキュリティ対策×12](https://baigie.me/officialblog/2020/01/28/wordpress-security/)
 <br>
 <br>
 
