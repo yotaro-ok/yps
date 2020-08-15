@@ -9,15 +9,18 @@
 
 ## WordPress5.4.2セットアップ
 
+#### WordPressの最新版をダウンロードして解凍してください
 ```
 cd /tmp
 wget https://ja.wordpress.org/latest-ja.zip
 unzip ./latest-ja.zip
 ```
+#### ディレクトリ移動してください
 ```
 mv wordpress wwpp
 mv wwpp /var/www/html/
 ```
+#### MySQLにWordPress用のユーザーを作成してください
 ```
 mysql -u root -p
 
@@ -27,18 +30,24 @@ create database wwppdb;
 grant all on wwppdb.* to wwppuser@localhost identified by '任意のパスワード';
 exit;
 ```
+#### 設定ファイルを編集してください
 ```
 cd /var/www/html/wwpp/
 cp -p wp-config-sample.php wp-config.php
 vi wp-config.php
 ```
 [wp-config.php編集差分](https://github.com/yotaro-ok/yps/issues/12#issuecomment-671045833)
+<br>
+(シークレットキーの生成を忘れずに)[https://api.wordpress.org/secret-key/1.1/salt/]
+<br>
+#### ファイル、ディレクトリのオーナーと権限を変更してください
 ```
 cd /var/www/html
 sudo chown -R centos:nginx /var/www/html/wwpp/
 sudo find /var/www/html/wwpp/ -type f -exec chmod 664 {} \;
 sudo find /var/www/html/wwpp/ -type d -exec chmod 775 {} \;
 ```
+#### Nginxを編集してください
 ```
 sudo vi /etc/nginx/conf.d/default.conf
 
@@ -69,11 +78,10 @@ sudo systemctl restart ngin
 
 #### ログインしてダッシュボード画面が表示されていることを確認してください
 
-sshポートから出来るようにするプラグインを入れます
+sshポートから更新出来るようにするプラグインを入れます
 <br>
 ![Ee-vlN7U0AAWcKN](https://user-images.githubusercontent.com/63440984/90323231-683c6400-df99-11ea-8ee7-7b4c98a1e307.png)
 <br>
-
 ```
 cd wp-content/plugins/
 wget https://downloads.wordpress.org/plugin/ssh-sftp-updater-support.0.8.2.zip
@@ -86,14 +94,13 @@ sudo chown -R centos:nginx ./ssh-sftp-updater-support/
 XXX.pemファイル選択してください
 <br>
 ![Ee-xFKYU8AMoWJY](https://user-images.githubusercontent.com/63440984/90323266-0b8d7900-df9a-11ea-95f3-f06a00ab9375.jpeg)
-
-
+<br>
 #### wp-config.phpの権限を変更してください
 ```
 cd /var/www/html/wwpp/
 sudo chmod 644 ./wp-config.php
 ```
-
+<br>
 好きなテーマを選択してインストール、有効化してください
 <br>
 ![Ee-09kJU4AEnSQJ](https://user-images.githubusercontent.com/63440984/90323292-61622100-df9a-11ea-843b-6ec54b97f375.png)
