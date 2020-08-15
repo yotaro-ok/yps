@@ -65,7 +65,7 @@ sudo systemctl restart php-fpm
 sudo systemctl restart ngin
 ```
 
-#### ブラウザからアクセスしてください
+#### （ドメインネームで）ブラウザからアクセスしてください
 
 ![Ee-t22hU4AE1myl](https://user-images.githubusercontent.com/63440984/90323187-b6049c80-df98-11ea-8cce-9329315aef02.png)
 <br>
@@ -77,12 +77,11 @@ sudo systemctl restart ngin
 ![Ee-t22hU4AE1myl](https://user-images.githubusercontent.com/63440984/90323224-417e2d80-df99-11ea-869e-3def17a5f279.png)
 
 #### ログインしてダッシュボード画面が表示されていることを確認してください
-
-sshポートから更新出来るようにするプラグインを入れます
-<br>
 ![Ee-vlN7U0AAWcKN](https://user-images.githubusercontent.com/63440984/90323231-683c6400-df99-11ea-8ee7-7b4c98a1e307.png)
 <br>
 ```
+sshポートから更新出来るようにするプラグインを入れます
+<br>
 cd wp-content/plugins/
 wget https://downloads.wordpress.org/plugin/ssh-sftp-updater-support.0.8.2.zip
 unzip ./ssh-sftp-updater-support.0.8.2.zip 
@@ -111,7 +110,7 @@ sudo chmod 644 ./wp-config.php
 <br>
 <br>
 ```
-Laravelへの戻しです
+// Laravelへの戻しです
 
 sudo vi /etc/nginx/conf.d/default.conf
 
