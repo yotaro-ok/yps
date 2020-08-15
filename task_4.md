@@ -38,7 +38,7 @@ vi wp-config.php
 ```
 [wp-config.php編集差分](https://github.com/yotaro-ok/yps/issues/12#issuecomment-671045833)
 <br>
-(シークレットキーの生成を忘れずに)[https://api.wordpress.org/secret-key/1.1/salt/]
+[シークレットキーの生成を忘れずに](https://api.wordpress.org/secret-key/1.1/salt/)
 <br>
 #### ファイル、ディレクトリのオーナーと権限を変更してください
 ```
