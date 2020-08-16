@@ -79,9 +79,9 @@ sudo systemctl restart ngin
 #### ログインしてダッシュボード画面が表示されていることを確認してください
 ![Ee-vlN7U0AAWcKN](https://user-images.githubusercontent.com/63440984/90323231-683c6400-df99-11ea-8ee7-7b4c98a1e307.png)
 <br>
-```
 sshポートから更新出来るようにするプラグインを入れます
 <br>
+```
 cd wp-content/plugins/
 wget https://downloads.wordpress.org/plugin/ssh-sftp-updater-support.0.8.2.zip
 unzip ./ssh-sftp-updater-support.0.8.2.zip 
