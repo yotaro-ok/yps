@@ -102,12 +102,11 @@ sudo chmod 644 ./wp-config.php
 <br>
 好きなテーマを選択してインストール、有効化してください
 <br>
-![Ee-09kJU4AEnSQJ](https://user-images.githubusercontent.com/63440984/90323292-61622100-df9a-11ea-843b-6ec54b97f375.png)br
+![Ee-09kJU4AEnSQJ](https://user-images.githubusercontent.com/63440984/90323292-61622100-df9a-11ea-843b-6ec54b97f375.png)
 <br>
 適当にレイアウトやコンテンツ作成して晒してみましょう
 <br>
 ![Ee_CotOUYAE1AMs](https://user-images.githubusercontent.com/63440984/90323306-8bb3de80-df9a-11ea-90f8-823680a4f80a.jpeg)
-<br>
 <br>
 ```
 // Laravelへの戻しです
