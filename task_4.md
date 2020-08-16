@@ -102,7 +102,7 @@ sudo chmod 644 ./wp-config.php
 <br>
 好きなテーマを選択してインストール、有効化してください
 <br>
-![Ee-09kJU4AEnSQJ](https://user-images.githubusercontent.com/63440984/90323292-61622100-df9a-11ea-843b-6ec54b97f375.png)
+![Ee-x5rOVoAEsBo-](https://user-images.githubusercontent.com/63440984/90323787-f6681880-dfa0-11ea-9b97-89e3b2f1d749.png)
 
 適当にレイアウトやコンテンツ作成して晒してみましょう
 <br>
