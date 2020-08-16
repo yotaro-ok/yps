@@ -62,7 +62,7 @@ location /wp-config.php {
 
 // 再起動
 sudo systemctl restart php-fpm
-sudo systemctl restart ngin
+sudo systemctl restart nginx
 ```
 
 #### （ドメインネームで）ブラウザからアクセスしてください
