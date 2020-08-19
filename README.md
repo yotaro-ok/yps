@@ -38,9 +38,9 @@ task#4 [の質問はこちらへ](https://github.com/yotaro-ok/yps/issues/12)
 
 ***
 
-#### 2020/08/??(???)
+#### 2020/08/21(fri)
 
-task#5 [簡単なWEBアプリケーション作成｜Bootstrapの利用](https://twitter.com/yotaro__ok)
+task#5 [簡単なWEBアプリケーション作成｜Bootstrapの利用](https://github.com/yotaro-ok/yps/blob/master/task_5.md)
 
 ***
 
