@@ -40,7 +40,7 @@ task#4 [の質問はこちらへ](https://github.com/yotaro-ok/yps/issues/12)
 
 #### 2020/08/??(???)
 
-task#5 [簡単なテストWEBアプリケーション作成｜Bootstrapの利用](https://twitter.com/yotaro__ok)
+task#5 [簡単なWEBアプリケーション作成｜Bootstrapの利用](https://twitter.com/yotaro__ok)
 
 ***
 
