@@ -115,7 +115,7 @@ root   /var/www/html/wwpp;
 root    /var/www/html/yps/public;
 
 sudo systemctl restart php-fpm
-sudo systemctl restart ngin
+sudo systemctl restart nginx
 ```
 [簡単にできるWordPressのセキュリティ対策×12](https://baigie.me/officialblog/2020/01/28/wordpress-security/)
 <br>
