@@ -45,6 +45,8 @@
 
 [元ネタツイート](https://twitter.com/yotaro__ok/status/1296798384997535744)
 <br>
+[元ネタツイート 8/25追加分](https://twitter.com/yotaro__ok/status/1298257156483870721)
+<br>
 #### 参考
 
 [miyupaca](https://twitter.com/miyupacaaa)さんのブログ→[2020-08-21 yps学習記録その5](https://paca-gatsby.netlify.app/2020-08-21/)
