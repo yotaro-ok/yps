@@ -164,23 +164,77 @@ mysql cli から exit　してください
 
 ****
 
-#### 簡単なWEBアプリケーション作成
-
-
+## 簡単なWEBアプリケーション作成
 
 #### モデルクラス作成
+
+前に作ったmodelクラスを削除してください
+```
+cd /var/www/html/yps
+rm app/Models/Player.php 
+```
+
+modelクラスを作成してください
+```
+php artisan make:model Models/Country -m
+php artisan make:model Models/Goal -m
+php artisan make:model Models/Pairing -m
+php artisan make:model Models/Player -m
+```
+
+テーブル名が複数形でmodelクラス名は単数形にしておけば、自動的にLaravelが紐づけてくれますが
+念の為、明示的にテーブル名を指定します
+尚、datesも指定します
+```
+protected $table = "players";
+protected $dates = ["expired_at", "deleted_at", "updated_at", "created_at"];
+```
+
+Playserクラス以外も同様に$table、$datesを指定してください
 
 ***
 
 #### コントローラークラス作成
 
+Controllerクラスを作成してください
+```
+php artisan make:controller CountryController --resource --model=Models/Country
+php artisan make:controller GoalController --resource --model=Models/Goal
+php artisan make:controller PairingController --resource --model=Models/Pairing
+php artisan make:controller PlayerController --resource --model= Models/Player
+
+php artisan make:controller WelcomeController --resource
+```
+
 ***
 
 #### ビュー（Blade）作成
 
+ビューを作成してください
+
+resources/views/welcome.blade.php に [これ](https://github.com/yotaro-ok/myapp/blob/develop/resources/views/welcome.blade.php) をコピペしてください
+
 ***
 
-#### Bootstrapの利用
+#### ルーター作成（変更）
+
+routes/web.php に [これ](https://github.com/yotaro-ok/myapp/blob/develop/routes/web.php) をコピペしてください
+
+最後に以下を実行してください
+```
+php artisan cache:clear && php artisan config:clear && php artisan route:clear && php artisan view:clear
+composer clear-cache && composer dump-autoload --optimize
+sudo chown -R centos:nginx /var/www/html/yps
+```
+
+ブラウザに [これ](https://twitter.com/yotaro__ok/status/1296939915704332289/photo/1) と同じように表示させてください
+※ページネーションは、適当でいいです
+
+ヒントは、
+　1. テーブルビューを１つ追加
+　2. functionを１つ追加
+　3. controllerからviewに変数渡し
+です
 
 ***
 
