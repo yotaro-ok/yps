@@ -38,7 +38,7 @@ npm install && npm run dev // エラーが表示されなければOKです
 
 #### 事前準備その２
 
-mysqldumpコマンド
+#### mysqldumpコマンドでDDL取得
 
 以前利用した worldcup2014db を今回も利用します
 テーブル構成を変更するので [DDL](http://e-words.jp/w/DDL.html) をmysqldumpで取得します
@@ -49,7 +49,7 @@ pwd
 
 mkdir resources/sql // ディレクトリを作成してください
 
-mysqldump -u root -p -d worldcup2014db > resources/sql/worldcup2014db.sql // データ構造のみのdumpを取ります
+mysqldump -u root -p -d worldcup2014db > resources/sql/worldcup2014db.sql // DDLを取得します　※テーブル定義部分のみでデータは取得しません
 ```
 
 #### テーブル構成変更
