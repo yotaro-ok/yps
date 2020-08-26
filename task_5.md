@@ -241,8 +241,6 @@ sudo chown -R centos:nginx /var/www/html/yps
 #### その２へ
 
 ***
-<br>
-<br>
 
 #### TODO: 資料を纏める
 
