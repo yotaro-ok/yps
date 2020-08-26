@@ -230,11 +230,11 @@ sudo chown -R centos:nginx /var/www/html/yps
 ブラウザに [これ](https://twitter.com/yotaro__ok/status/1296939915704332289/photo/1) と同じように表示させてください
 ※ページネーションは、適当でいいです
 
-ヒントは、
-　1. テーブルビューを１つ追加
-　2. functionを１つ追加
-　3. controllerからviewに変数渡し
-です
+ヒントは、  
+　1. テーブルビューを１つ追加  
+　2. functionを１つ追加  
+　3. controllerからviewに変数渡し  
+です  
 
 ***
 
