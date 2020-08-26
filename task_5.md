@@ -38,8 +38,10 @@ npm install && npm run dev // エラーが表示されなければOKです
 
 #### 事前準備その２
 
+mysqldumpコマンド
+
 以前利用した worldcup2014db を今回も利用します
-テーブル構成を変更するのでDDLをmysqldumpで取得します
+テーブル構成を変更するので [DDL](http://e-words.jp/w/DDL.html) をmysqldumpで取得します
 vscode起動して　メニューの新しいターミナルを選択してください
 ```
 pwd
@@ -49,6 +51,8 @@ mkdir resources/sql // ディレクトリを作成してください
 
 mysqldump -u root -p -d worldcup2014db > resources/sql/worldcup2014db.sql // データ構造のみのdumpを取ります
 ```
+
+#### テーブル構成変更
 
 以下のテーブルがあるか確認してください
 ```
@@ -162,15 +166,7 @@ mysql cli から exit　してください
 
 #### 簡単なWEBアプリケーション作成
 
-***
 
-#### mysqldump
-
-***
-
-#### テーブル定義変更
-
-***
 
 #### モデルクラス作成
 
