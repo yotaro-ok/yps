@@ -9,7 +9,30 @@
 
 #### 事前準備その１
 
+nodejs、npmをバージョンアップします
+```
+sudo yum remove node npm -y
+curl -sL https://rpm.nodesource.com/setup_12.x | sudo bash -
+sudo yum install nodejs -y
 
+// バージョンナンバーが微妙に異なる場合があります
+$ node -v
+v12.18.3
+$ npm -v
+6.14.6
+
+cd /var/www/html/yps
+rm -rf ./node_modules
+npm install && npm run dev // エラーが表示されなければOKです
+```
+
+LaravelのuiにBootstrapを指定してください
+```
+composer require laravel/ui
+php artisan ui bootstrap
+
+npm install && npm run dev // エラーが表示されなければOKです
+```
 
 ***
 
