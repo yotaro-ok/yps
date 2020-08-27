@@ -257,6 +257,10 @@ sudo chown -R centos:nginx /var/www/html/yps
 <br>
 [元ネタツイート 8/26追加分](https://twitter.com/yotaro__ok/status/1298605808813355015)
 <br>
+[元ネタツイート 8/27追加分](https://twitter.com/yotaro__ok/status/1298973532647378944)
+<br>
+[元ネタツイート 8/28追加分](https://twitter.com/yotaro__ok/status/1299007829521477635)
+<br>
 #### 参考
 
 [miyupaca](https://twitter.com/miyupacaaa)さんのブログ→[2020-08-21 yps学習記録その5](https://paca-gatsby.netlify.app/2020-08-21/)
