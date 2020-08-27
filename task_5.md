@@ -240,9 +240,13 @@ sudo chown -R centos:nginx /var/www/html/yps
 
 #### 答え
 
+8/29（sat）に回答予定
+
 ***
 
 #### その２へ
+
+9/?(?)予定
 
 ***
 
