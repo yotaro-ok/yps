@@ -334,6 +334,28 @@ update players set deleted_at=null where id != 737;
 <br>
 
 [元ネタツイート 8/28追加分](https://twitter.com/yotaro__ok/status/1299007829521477635)
+
+```
+// インストールします
+sudo yum install --enablerepo=remi,remi-php73 phpMyAdmin
+
+// セキュアにしたいのでディレクトリ名を変更します
+// nginx.confでip制限入れると良いです　※vpn使ってたりしてipアドレスがコロコロ変わる場合は、ip制限できないのでphpmyadminは使わないでください
+sudo mv /usr/share/phpMyAdmin /usr/share/pma
+
+// シンボリックリンクを張ります
+sudo ln -s /usr/share/pma/ /var/www/html/yps/public/pma
+
+// sessionディレクトリのオーナーを変更します
+sudo chown nginx:nginx /var/lib/php/session
+
+// 再起動します
+sudo systemctl restart php-fpm
+sudo systemctl restart nginx
+
+// これで完了です
+```
+
 <br>
 #### 参考
 
