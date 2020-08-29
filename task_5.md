@@ -318,6 +318,7 @@ update players set name='酒井宏樹' where id=723;
 はまおさんがハマったやーつｗ
 Laravelの[SoftDeletes](https://github.com/yotaro-ok/myapp/blob/6fd6f1ade70d6d42c2829f3a093df9ffb2771278/app/Models/Player.php#L6)を使います
 忘れずに[use](https://github.com/yotaro-ok/myapp/blob/6fd6f1ade70d6d42c2829f3a093df9ffb2771278/app/Models/Player.php#L12)してください
+
 ```
 // playersテーブルの自分以外のdeleted_atに日付を入れるだけです
 update players set deleted_at=now() where id != 737;
