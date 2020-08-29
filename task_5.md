@@ -255,7 +255,7 @@ GROUP BY
     p.id 
 ORDER BY
     goals DESC,
-    p.id
+    p.id;
 ```
 
 2.Playerモデルに関数を作成してください
