@@ -240,7 +240,34 @@ sudo chown -R centos:nginx /var/www/html/yps
 
 #### 答え
 
-8/29（sat）に回答予定
+1.選手毎の総得点数を分かりやすくするためにテーブルビュー（total_goals）を作成してください
+```
+CREATE VIEW 
+    total_goals AS 
+SELECT
+    p.id AS id,
+    COUNT(g.goal_time) AS goals
+FROM
+    (players p LEFT JOIN goals g ON((p.id = g.player_id)))
+WHERE
+    (g.goal_time IS NOT NULL)
+GROUP BY
+    p.id 
+ORDER BY
+    goals DESC,
+    p.id
+```
+
+2.Playerモデルに関数を作成してください
+[getWithCountryBySimplePaginate](https://github.com/yotaro-ok/myapp/blob/6fd6f1ade70d6d42c2829f3a093df9ffb2771278/app/Models/Player.php#L18)です
+※この部分をすべてテーブルビューにしても問題ありません
+
+WelcomeControllerの[index](https://github.com/yotaro-ok/myapp/blob/6fd6f1ade70d6d42c2829f3a093df9ffb2771278/app/Http/Controllers/WelcomeController.php#L20)ファンクションからgetWithCountryBySimplePaginateファンクションを呼び出してwelcomeブレードに変数を渡します
+
+3.welcomブレードで受け取った変数をループさせて表示させてください
+[こんな感じ](https://github.com/yotaro-ok/myapp/blob/6fd6f1ade70d6d42c2829f3a093df9ffb2771278/resources/views/welcome.blade.php#L84)です
+
+[ページネーション](https://github.com/yotaro-ok/myapp/blob/6fd6f1ade70d6d42c2829f3a093df9ffb2771278/resources/views/welcome.blade.php#L120)を付けて完了です
 
 ***
 
