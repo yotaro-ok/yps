@@ -335,6 +335,8 @@ update players set deleted_at=null where id != 737;
 
 [元ネタツイート 8/28追加分](https://twitter.com/yotaro__ok/status/1299007829521477635)
 
+秒で出来ます（僕は時間を止められる👻）
+
 ```
 // インストールします
 sudo yum install --enablerepo=remi,remi-php73 phpMyAdmin
