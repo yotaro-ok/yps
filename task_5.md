@@ -302,6 +302,7 @@ insert into goals (pairing_id, player_id, goal_time) select pairing_id, 737, goa
 ```
 <br>
 [元ネタツイート 8/26追加分](https://twitter.com/yotaro__ok/status/1298605808813355015)
+
 ```
 // 酒井選手を検索してそれぞれのIDを確認してください
 select * from players where name like '酒井%';
