@@ -302,6 +302,16 @@ insert into goals (pairing_id, player_id, goal_time) select pairing_id, 737, goa
 ```
 <br>
 [元ネタツイート 8/26追加分](https://twitter.com/yotaro__ok/status/1298605808813355015)
+```
+// 酒井選手を検索してそれぞれのIDを確認してください
+select * from players where name like '酒井%';
+
+// あとはフルネームでUPDATEするだけです
+update players set name='酒井高徳' where id=724;
+update players set name='酒井宏樹' where id=723;
+
+// これで完了です
+```
 <br>
 [元ネタツイート 8/27追加分](https://twitter.com/yotaro__ok/status/1298973532647378944)
 <br>
