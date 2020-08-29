@@ -285,6 +285,21 @@ WelcomeControllerの[index](https://github.com/yotaro-ok/myapp/blob/6fd6f1ade70d
 [元ネタツイート](https://twitter.com/yotaro__ok/status/1296798384997535744)
 <br>
 [元ネタツイート 8/25追加分](https://twitter.com/yotaro__ok/status/1298257156483870721)
+#### こっちに書きますね
+```
+まず、自分をplayersテーブルに追加します
+insert into players (country_id, uniform_num, position, name, club, birth, height, weight) values(12, 11, 'MF', 'yotaro', '横浜M', '1990-02-01', 177, 70);
+
+// goalsテーブルにデータを作ります
+// これは、やり方いくつかありますが、ロドリゲス（ID=201）のデータを利用しましょう
+// ID=201のデータをSELECTしてきてIDのところだけ先程、playersテーブルにINSERTした自分のIDに変えてINSERTします
+insert into goals (pairing_id, player_id, goal_time) select pairing_id, 737, goal_time from goals where player_id=201;
+
+// このままだとロドリゲスと得点数が同じになるのでもう１レコード追加します
+insert into goals (pairing_id, player_id, goal_time) select pairing_id, 737, goal_time from goals where player_id=201 and pairing_id=5;
+
+// これで完了です
+```
 <br>
 [元ネタツイート 8/26追加分](https://twitter.com/yotaro__ok/status/1298605808813355015)
 <br>
