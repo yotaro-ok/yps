@@ -44,31 +44,31 @@ task#5 [簡単なWEBアプリケーション作成｜Bootstrapの利用](https:/
 
 ***
 
-#### 2020/08/??(???)
+#### 2020/09/04(fri)
 
-task#6 [MVCでWEBアプリケーション作成](https://twitter.com/yotaro__ok)
-
-***
-
-#### 2020/08/??(???)
-
-task#7 [MVCでWEBアプリケーション作成2](https://twitter.com/yotaro__ok)
-
-***
-
-#### 2020/08/??(???)
-
-task#8 [MVCでWEBアプリケーション作成3](https://twitter.com/yotaro__ok)
+task#6 [簡単なWEBアプリケーション作成その２｜Bootstrapの利用](https://github.com/yotaro-ok/yps/blob/master/task_6.md)
 
 ***
 
 #### 2020/09/??(???)
 
-task#9 [その他](https://twitter.com/yotaro__ok)
+task#7 [MVCでWEBアプリケーション作成](https://twitter.com/yotaro__ok)
 
 ***
 
 #### 2020/09/??(???)
+
+task#8 [MVCでWEBアプリケーション作成2](https://twitter.com/yotaro__ok)
+
+***
+
+#### 2020/09/??(???)
+
+task#9 [MVCでWEBアプリケーション作成3](https://twitter.com/yotaro__ok)
+
+***
+
+#### 2020/10/??(???)
 
 task#10 [試験](https://twitter.com/yotaro__ok)
 
