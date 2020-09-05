@@ -271,12 +271,6 @@ WelcomeControllerの[index](https://github.com/yotaro-ok/myapp/blob/6fd6f1ade70d
 
 ***
 
-#### その２へ
-
-9/?(?)予定
-
-***
-
 <br>
 <br>
 
