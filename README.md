@@ -42,11 +42,15 @@ task#4 [の質問はこちらへ](https://github.com/yotaro-ok/yps/issues/12)
 
 task#5 [簡単なWEBアプリケーション作成｜Bootstrapの利用](https://github.com/yotaro-ok/yps/blob/master/task_5.md)
 
+task#5 [の質問はこちらへ](https://github.com/yotaro-ok/yps/issues/14)
+
 ***
 
 #### 2020/09/04(fri)
 
 task#6 [簡単なWEBアプリケーション作成その２｜Bootstrapの利用](https://github.com/yotaro-ok/yps/blob/master/task_6.md)
+
+task#6 [の質問はこちらへ](https://github.com/yotaro-ok/yps/issues/16)
 
 ***
 
