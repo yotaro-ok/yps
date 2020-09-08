@@ -262,6 +262,8 @@ ORDER BY
 [getWithCountryBySimplePaginate](https://github.com/yotaro-ok/myapp/blob/6fd6f1ade70d6d42c2829f3a093df9ffb2771278/app/Models/Player.php#L18)です
 ※この部分をすべてテーブルビューにしても問題ありません
 
+👉[しらたきver](https://github.com/Shirataki7/yps/tree/develop)
+
 WelcomeControllerの[index](https://github.com/yotaro-ok/myapp/blob/6fd6f1ade70d6d42c2829f3a093df9ffb2771278/app/Http/Controllers/WelcomeController.php#L20)ファンクションからgetWithCountryBySimplePaginateファンクションを呼び出してwelcomeブレードに変数を渡します
 
 3.welcomブレードで受け取った変数をループさせて表示させてください
