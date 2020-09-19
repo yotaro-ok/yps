@@ -7,6 +7,14 @@
 
 ***
 
+#### 注意事項
+
+Laravel7でのプロジェクト作成時に "7.25.0" を必ず指定してください
+<br>
+フォロワーさんから "7.*" 指定だとおかしな挙動をする場合があると報告がありました
+
+***
+
 #### お手軽簡単WEBアプリケーション
 
 Laravelでメール認証月のToDoアプリを作ります
@@ -25,9 +33,10 @@ Laravelでメール認証月のToDoアプリを作ります
 
 ２つのブログ記事を利用します
 
-[Laravel 6.x laravel/uiを利用してbootstrap 4を適用する](https://blog.hrendoh.com/laravel-6-setup-bootstrap4-with-laravel-ui/)
+1.[Laravel 6.x laravel/uiを利用してbootstrap 4を適用する](https://blog.hrendoh.com/laravel-6-setup-bootstrap4-with-laravel-ui/)
 <br>
-[【Laravel】ユーザ登録時にメール認証する(v5.7以上)](https://qiita.com/nekyo/items/03e50b4d0dd6f09287d6)
+<br>
+2.【Laravel】ユーザ登録時にメール認証する(v5.7以上)](https://qiita.com/nekyo/items/03e50b4d0dd6f09287d6)
 
 #### プロジェクトの作成
 
