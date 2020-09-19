@@ -36,7 +36,7 @@ Laravelでメール認証月のToDoアプリを作ります
 1.[Laravel 6.x laravel/uiを利用してbootstrap 4を適用する](https://blog.hrendoh.com/laravel-6-setup-bootstrap4-with-laravel-ui/)
 <br>
 <br>
-2.【Laravel】ユーザ登録時にメール認証する(v5.7以上)](https://qiita.com/nekyo/items/03e50b4d0dd6f09287d6)
+2.[【Laravel】ユーザ登録時にメール認証する(v5.7以上)](https://qiita.com/nekyo/items/03e50b4d0dd6f09287d6)
 
 #### プロジェクトの作成
 
