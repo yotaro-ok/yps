@@ -54,25 +54,27 @@ task#6 [の質問はこちらへ](https://github.com/yotaro-ok/yps/issues/16)
 
 ***
 
-#### 2020/09/??(???)
+#### 2020/09/19(sat)
 
-task#7 [MVCでWEBアプリケーション作成](https://twitter.com/yotaro__ok)
+task#7 [MVCでWEBアプリケーション作成](https://github.com/yotaro-ok/yps/blob/master/task_7.md)
+
+task#7 [の質問はこちらへ](https://github.com/yotaro-ok/yps/issues/17)
 
 ***
 
-#### 2020/09/??(???)
+#### 2020/??/??(???)
 
 task#8 [MVCでWEBアプリケーション作成2](https://twitter.com/yotaro__ok)
 
 ***
 
-#### 2020/09/??(???)
+#### 2020/??/??(???)
 
 task#9 [MVCでWEBアプリケーション作成3](https://twitter.com/yotaro__ok)
 
 ***
 
-#### 2020/10/??(???)
+#### 2020/??/??(???)
 
 task#10 [試験](https://twitter.com/yotaro__ok)
 
