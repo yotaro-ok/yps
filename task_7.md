@@ -14,7 +14,7 @@
 
 #### TODO: 資料を纏める
 
-[元ネタツイート](https://twitter.com/yotaro__ok/)
+[元ネタツイート](https://twitter.com/yotaro__ok/status/1307232598486208513)
 <br>
 <br>
 #### 参考
