@@ -150,6 +150,8 @@ show tables;
 +--------------------+
 ```
 
+[サンプルソースのGitHubリポジトリ](https://github.com/hrendoh/laravel-ui-bootstrap-tasks)
+
 ***
 
 #### Gmailでのメール認証
