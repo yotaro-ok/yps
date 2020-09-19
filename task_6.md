@@ -188,4 +188,5 @@ TOP画面は何でもいいですyo!
 <br>
 
 👇聖典となりつつある[miyupaca](https://twitter.com/miyupacaaa)さんのブログ
+<br>
 [2020-09-05 yps学習記録その6](https://paca-gatsby.netlify.app/2020-09-05/)
