@@ -201,3 +201,5 @@ TOP画面は何でもいいですyo!
 👇聖典となりつつある[miyupaca](https://twitter.com/miyupacaaa)さんのブログ
 <br>
 [2020-09-05 yps学習記録その6](https://paca-gatsby.netlify.app/2020-09-05/)
+<br>
+[Laravel-Todoアプリに一週間機能追加チャレンジ](https://paca-gatsby.netlify.app/laravel-todoapp-studylog/)
