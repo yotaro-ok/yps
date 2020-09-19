@@ -38,6 +38,8 @@ Laravelでメール認証月のToDoアプリを作ります
 <br>
 2.[【Laravel】ユーザ登録時にメール認証する(v5.7以上)](https://qiita.com/nekyo/items/03e50b4d0dd6f09287d6)
 
+***
+
 #### プロジェクトの作成
 
 ```
@@ -100,6 +102,7 @@ sudo chmod -R 777 storage/ bootstrap/cache/
 
 ![EhE0aGzU8AAOap0](https://user-images.githubusercontent.com/63440984/93662154-d2fd2580-fa98-11ea-9077-95cfe39b0018.jpeg)
 
+***
 
 #### タスクアプリを作成
 
