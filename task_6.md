@@ -27,6 +27,10 @@ Laravelでメール認証月のToDoアプリを作ります
 <br>
 カスタマイズすると面白いですyo!
 
+GitHubもちゃんと使ってくださいね
+
+[git-flow 図解](https://qiita.com/ohnaka0410/items/7c7fa20710dfd72b7d7a)
+
 ***
 
 #### 課題の題材
