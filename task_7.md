@@ -18,3 +18,12 @@
 <br>
 <br>
 #### 参考
+
+[miyupaca](https://twitter.com/miyupacaaa)さんのブログ
+<br>
+[2020-09-22 yps学習記録その7〜準備編〜](https://paca-gatsby.netlify.app/2020-09-22/)
+<br>
+<br>
+<br>
+<br>
+EOF
