@@ -55,7 +55,7 @@ composer create-project --prefer-dist laravel/laravel myapp2 "7.25.0" // 👈こ
 ```
 // 途中で何か聞かれたら全部　Yes　でOKです
 cd myapp2
-composer require laravel/ui
+composer require laravel/ui "2.*"
 npm install
 php artisan ui bootstrap --auth
 npm install cross-env
