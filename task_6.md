@@ -59,6 +59,7 @@ composer require laravel/ui "2.*"
 npm install
 php artisan ui bootstrap --auth
 npm install cross-env
+npm install
 npm run dev
 ```
 ```
