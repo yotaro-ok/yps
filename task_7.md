@@ -18,6 +18,7 @@
 <br>
 [補足説明](https://twitter.com/yotaro__ok/status/1309834179736006657)
 <br>
+[補習講義](https://twitter.com/yotaro__ok/status/1314772384713379840)
 <br>
 #### 参考
 
