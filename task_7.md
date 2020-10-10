@@ -26,6 +26,7 @@
 <br>
 [2020-09-22 yps学習記録その7〜準備編〜](https://paca-gatsby.netlify.app/2020-09-22/)
 <br>
+[2020-10-10 yps学習記録その7〜本編〜](https://paca-gatsby.netlify.app/2020-10-10/)
 <br>
 <br>
 <br>
