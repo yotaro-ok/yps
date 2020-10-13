@@ -104,7 +104,7 @@ exit;
 cd /tmp
 sudo yum install wget unzip -y
 wget http://tech.pjin.jp/wp-content/uploads/2016/04/worldcup2014.zip
-unzip http://worldcup2014.zip
+unzip worldcup2014.zip
 ls -la worldcup2014.sql
 ```
 
