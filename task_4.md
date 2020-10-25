@@ -71,8 +71,8 @@ sudo systemctl restart nginx
 <br>
 ![Ee-uZibU8AUd1iG](https://user-images.githubusercontent.com/63440984/90323207-f82dde00-df98-11ea-997a-87a02143dde7.png)
 
-#### 全項目入力したら WordPressをインスール　ボタンを選択してください
-↓これが出てばOKです
+#### 全項目入力したら WordPressをインストール　ボタンを選択してください
+↓これが出ればOKです
 <br>
 ![Ee-t22hU4AE1myl](https://user-images.githubusercontent.com/63440984/90323224-417e2d80-df99-11ea-869e-3def17a5f279.png)
 
