@@ -62,9 +62,11 @@ task#7 [の質問はこちらへ](https://github.com/yotaro-ok/yps/issues/17)
 
 ***
 
-#### 2020/??/??(???)
+#### 2020/10/31(sat)
 
-task#8 [MVCでWEBアプリケーション作成2](https://twitter.com/yotaro__ok)
+task#8 [TwitterAPIを利用してWEBアプリケーション作成](https://github.com/yotaro-ok/yps/blob/master/task_8.md)
+
+task#8 [の質問はこちらへ](https://github.com/yotaro-ok/yps/issues/21)
 
 ***
 
