@@ -1,4 +1,4 @@
-## yps1 task#7
+## yps1 task#8
 
 #### 前回はこちらです
 [#yps1 task#7](https://github.com/yotaro-ok/yps/blob/master/task_7.md)
