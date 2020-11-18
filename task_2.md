@@ -216,7 +216,7 @@ sudo chmod +x /usr/local/bin/composer
 ```
 ```
 cd /var/www/html
-composer create-project --prefer-dist laravel/laravel yps "7.25.0" // 2020/09/12時点でバージョン7.28.* だとエラーが発生することを確認済み
+composer create-project --prefer-dist laravel/laravel yps "7.*" // 2020/09/12時点でバージョン7.28.* だとエラーが発生します
 ```
 ```
 cd yps
