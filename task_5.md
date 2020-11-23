@@ -28,7 +28,7 @@ npm install && npm run dev // エラーが表示されなければOKです
 
 LaravelのuiにBootstrapを指定してください
 ```
-composer require laravel/ui
+composer require laravel/ui:^2.4
 php artisan ui bootstrap
 
 npm install && npm run dev // エラーが表示されなければOKです
