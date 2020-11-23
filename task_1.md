@@ -163,7 +163,7 @@ sudo systemctl restart sshd
 
 #### Step.16　以下のコマンドを打ってスワップ領域を作成してください
 ```
-sudo -s /bin/dd if=/dev/zero of=/var/swap.1 bs=1M count=1024
+sudo -s /bin/dd if=/dev/zero of=/var/swap.1 bs=1M count=4096
 sudo -s /sbin/mkswap /var/swap.1
 sudo -s /sbin/swapon /var/swap.1
 ```
