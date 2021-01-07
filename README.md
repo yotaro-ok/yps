@@ -70,15 +70,15 @@ task#8 [の質問はこちらへ](https://github.com/yotaro-ok/yps/issues/21)
 
 ***
 
-#### 2020/??/??(???)
+#### 2021/??/??(???)
 
 task#9 [MVCでWEBアプリケーション作成3](https://twitter.com/yotaro__ok)
 
 ***
 
-#### 2020/??/??(???)
+#### 2021/??/??(???)
 
-task#10 [試験](https://twitter.com/yotaro__ok)
+task#10 [試験?](https://twitter.com/yotaro__ok)
 
 ***
 
