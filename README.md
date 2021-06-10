@@ -1,6 +1,7 @@
 ## yps1
 
-![yotaro](https://user-images.githubusercontent.com/63440984/87960823-d3585f00-caef-11ea-8cb1-11b1a86448b8.png)
+![やんきゃろう](https://user-images.githubusercontent.com/63440984/121446209-ff155980-c9cd-11eb-9424-543a26daa897.png)
+
 
 ***
 
